@@ -171,8 +171,6 @@ const Navbar = () => {
 
             <div
               className="relative"
-              onMouseOut={() => setToggleCol((prev) => !prev)}
-              onMouseOver={() => setToggleCol((prev) => !prev)}
             >
               <h5 className="text-[#A3A3A3] cursor-pointer text-[12px]">
                 Collaboration
@@ -192,8 +190,6 @@ const Navbar = () => {
 
             <div
               className="relative"
-              onMouseOut={() => setToggleCon((prev) => !prev)}
-              onMouseOver={() => setToggleCon((prev) => !prev)}
             >
               <h5 className="text-[#A3A3A3] cursor-pointer text-[12px]">
                 Contact Us
