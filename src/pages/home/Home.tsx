@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import LetsMake from "./LetsMake";
 import Footer from "../../component/Footer";

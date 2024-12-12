@@ -7,8 +7,7 @@ const Navbar = () => {
   const [toggleSer, setToggleSer] = useState(false);
   const [toggleSo, setToggleSo] = useState(false);
   const [toggleCar, setToggleCar] = useState(false);
-  const [toggleCol, setToggleCol] = useState(false);
-  const [toggleCon, setToggleCon] = useState(false);
+
   const [isOpen, setIsOpen] = useState(false);
 
   return (
