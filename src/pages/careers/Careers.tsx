@@ -35,7 +35,7 @@ const Careers = () => {
                 </div>
                       <div>
                         <div className="flex justify-center mt-[60px]"></div>
-                        <div className="flex justify-center">
+                        <div className="flex justify-center mt-[60px]">
                           <div className="bg-[#0A201D] w-fit border border-[#6EFBF2] flex gap-2 hover:gap-4 cursor-pointer items-center px-1 rounded-full">
                             {/* <div className="bg-[#23F7DD] text-[8px] px-1 rounded-full">New</div> */}
                             <h5 className="text-[#6EFBF2] text-[12px]">
