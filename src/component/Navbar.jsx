@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="fixed">
       {/* <nav className="bg-white w-full z-20 top-6 rounded-[12px] py-2 "> */}
       <nav className="bg-black  z-20 top-6 rounded-full md:pr-6 ">
-        <div className="flex w-full items-center  justify-between ">
+        <div className="flex w-full items-center py-2 justify-between ">
           <div>
             <Link to={"/"}>
               <img src="/logo.png" className="w-full h-[40px]" alt="/" />
