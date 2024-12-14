@@ -10,110 +10,110 @@ const PicturesAlone = () => {
           {/* Original Content */}
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01-5.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt="crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-08.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-07.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-06.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-05.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-04.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-03.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-02.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01-4.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           {/* Duplicate Content */}
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01-5.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-08.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-07.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-06.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-05.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-04.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-03.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-02.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01-4.webp"
-            alt="Photo of the crowd at xDays 2023"
+            alt=" crowd at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
@@ -124,93 +124,93 @@ const PicturesAlone = () => {
         <div className="flex gap-4 animate-marquee-backward">
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01-3.webp"
-            alt="Photo of the crowed at xDays 2023"
+            alt=" crowed at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01.webp"
-            alt="Photo of the crowed at xDays 2023"
+            alt=" crowed at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01-2.webp"
-            alt="Photo of the crowed at xDays 2023"
+            alt=" crowed at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01-4.webp"
-            alt="Photo of the crowed at xDays 2023"
+            alt=" crowed at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01-5.webp"
-            alt="Photo of the crowed at xDays 2023"
+            alt=" crowed at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01-7.webp"
-            alt="Photo of the crowed at xDays 2023"
+            alt=" crowed at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
 
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01.webp"
-            alt="Photo of the crowed at xDays 2023"
+            alt=" crowed at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-06.webp"
-            alt="Photo of the crowed at xDays 2023"
+            alt=" crowed at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01-2.webp"
-            alt="Photo of the crowed at xDays 2023"
+            alt=" crowed at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01-3.webp"
-            alt="Photo of the crowed at xDays 2023"
+            alt=" crowed at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01-4.webp"
-            alt="Photo of the crowed at xDays 2023"
+            alt=" crowed at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01-5.webp"
-            alt="Photo of the crowed at xDays 2023"
+            alt=" crowed at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
 
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01-6.webp"
-            alt="Photo of the crowed at xDays 2023"
+            alt=" crowed at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-lower-01-7.webp"
-            alt="Photo of the crowed at xDays 2023"
+            alt=" crowed at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
           <img
             src="https://cdn.multiversx.com/webflow/xCommunity-upper-06.webp"
-            alt="Photo of the crowed at xDays 2023"
+            alt=" crowed at xDays 2023"
             loading="lazy"
             className="community_img rounded-[20px]"
           />
