@@ -3,40 +3,49 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 import LetsMake from "./LetsMake";
 import Footer from "../../component/Footer";
 import Navbar from "../../component/Navbar";
+import FeaturedPartners from "./FeaturedPartners";
+import Secure from "./Secure";
+import FutureProof from "./FutureProof";
+import ExploreEco from "./ExploreEco";
+import PicturesAlone from "./PicturesAlone";
+import LatestNews from "./LatestNews";
 
 const Home = () => {
-
   return (
     <div className="bg-[#262626] h-full  relative">
-    <div className="relative">
-      <div
-        className="absolute inset-0 bg-cover "
-        style={{
-          backgroundImage:
-            "url('https://cdn.multiversx.com/webflow/Hero%20section%20background.webp')",
-          // transform: "rotate(-100deg)", // Rotate the image slightly left
-          transformOrigin: "center",
-          top: "-20%",
-          // backgroundSize: "80%", // Reduce or increase the size of the background image
-          left: "-10%", // Push the image to the right side
-          position: "absolute", // Ensure it's positioned correctly
-        }}
-      ></div>
-   
+      <div className="relative">
+        <div
+          className="absolute inset-0 bg-cover "
+          style={{
+            backgroundImage:
+              "url('https://cdn.multiversx.com/webflow/Hero%20section%20background.webp')",
+            // transform: "rotate(-100deg)", // Rotate the image slightly left
+            transformOrigin: "center",
+            top: "-20%",
+            // backgroundSize: "80%", // Reduce or increase the size of the background image
+            left: "-10%", // Push the image to the right side
+            position: "absolute", // Ensure it's positioned correctly
+          }}
+        ></div>
+
         <div className="lg:p-3 p-2 flex w-full  justify-center ">
-          <div className="max-w-[2000px] overflow-hidden z-10 bg-[#0e0e0e] rounded-[50px]  w-full">
-            <div className="bg-gradient-to-b from-[#0a0a0a00] via-[#0a0a0a] via-61% from-20% w-full rounded-[15px]  pt-[6px]">
-              <div className="flex justify-center">
-                <div className="max-w-[1500px]  lg:px-14 px-3 w-full">
-                  <div className="mx-7">
-                <Navbar />
-                  </div>
-<div className="">
-<div className="flex justify-center mt-[200px]">
-                <div className="bg-[#0A201D] flex gap-2 hover:gap-4 cursor-pointer items-center p-2 rounded-full">
-                  <div className="bg-[#23F7DD] text-[8px] px-1 rounded-full">New</div>
-               <h5 className="text-[#F5F5F5] text-[12px]">Spica 1.8 Live on Mainnet</h5>
+          <div className=" overflow-hidden z-10 bg-black min-h-screen rounded-[50px]  w-full">
+            {/* <div className="bg-gradient-to-b from-[#0a0a0a00] via-[#0a0a0a] via-61% from-20% w-full rounded-[15px]  pt-[6px]"> */}
+            <div className="flex justify-center">
+              <div className="max-w-[2000px] mx-auto lg:px-14 px-3 w-full">
+                <div className=" flex justify-center">
+                  <Navbar />
                 </div>
+                <div className="">
+                  <div className="flex justify-center mt-[200px]">
+                    <div className="bg-[#0A201D] flex gap-2 hover:gap-4 cursor-pointer items-center p-2 rounded-full">
+                      <div className="bg-[#23F7DD] text-[8px] px-1 rounded-full">
+                        New
+                      </div>
+                      <h5 className="text-[#F5F5F5] text-[12px]">
+                        Spica 1.8 Live on Mainnet
+                      </h5>
+                    </div>
                   </div>
                   <div className="flex justify-center ">
                     <h3 className="text-[#f5f5f5] text-center leading-[45px] lg:leading-[60px]  z-10 text-[40px] lg:text-[4rem] ">
@@ -136,7 +145,6 @@ const Home = () => {
                       <div className="max-w-[1100px]">
                         <div className="grid grid-cols-12 gap-5 w-full">
                           <div className="lg:col-span-5 md:col-span-6 col-span-12 flex flex-col gap-3 w-full">
-                          
                             <div className="bg-[#262626] h-full lg:h-fit z-10 rounded-[1rem] py-7 px-5">
                               <div className="flex items-center justify-between">
                                 <h6 className="text-[#737373] text-[15px]">
@@ -159,15 +167,15 @@ const Home = () => {
                             </div>
                           </div>
                           <div className="bg-[#262626]  md:col-span-6 col-span-12 lg:hidden block z-10 rounded-[1rem] py-7 px-5">
-                              <div className="flex flex-col ">
-                                <h6 className="text-[#737373] text-[15px]">
-                                  Total Transaction
-                                </h6>
-                                <h6 className="text-[#23F7DD] text-end text-[35px]">
-                                  467,080,937
-                                </h6>
-                              </div>
+                            <div className="flex flex-col ">
+                              <h6 className="text-[#737373] text-[15px]">
+                                Total Transaction
+                              </h6>
+                              <h6 className="text-[#23F7DD] text-end text-[35px]">
+                                467,080,937
+                              </h6>
                             </div>
+                          </div>
                           <div className="lg:col-span-4 md:col-span-6  col-span-12 lg:place-self-end w-full">
                             <div className="z-20 relative ">
                               <div
@@ -231,7 +239,7 @@ const Home = () => {
                   </div>
 
                   <div className="flex justify-center pb-10">
-                    <div className="max-w-[1500px] md:px-14 px-4 w-full">
+                    <div className="max-w-[2000px] md:px-14 px-4 w-full">
                       <div className="lg:flex hidden justify-between gap-5">
                         <img
                           src="https://cdn.multiversx.com/webflow/google-cloud-logo.svg"
@@ -324,21 +332,20 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                </div>
-
-  
               </div>
             </div>
-
-      
+            {/* </div> */}
           </div>
-
-
         </div>
-        </div>
-   <LetsMake />
-   <Footer />
-
+      </div>
+      <LetsMake />
+      <FeaturedPartners />
+      <Secure />
+      <FutureProof />
+      <ExploreEco />
+      <PicturesAlone />
+      <LatestNews />
+      <Footer />
     </div>
   );
 };

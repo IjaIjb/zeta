@@ -25,7 +25,7 @@ const Footer = () => {
           />
         </div>
         <div className="flex justify-center relative z-10">
-          <div className="max-w-[1500px] h-full md:px-14 px-4 pt-[100px] md:pb-[150px] pb-14 w-full">
+          <div className="max-w-[2000px] h-full md:px-14 px-4 pt-[100px] md:pb-[150px] pb-14 w-full">
             <div className="flex justify-center pb-5">
               <div className="text-[1.5rem] text-center font-[500] text-white">
                 Stay in-the-know and never miss an update
@@ -37,7 +37,7 @@ const Footer = () => {
                 className="h-12 rounded-[12px] px-5 md:w-[350px] w-full text-[#f5f5f5] text-[1.13rem] bg-[#262626] border border-[#262626]"
                 placeholder="Enter a valid email address"
               />
-              <div className="h-12 mt-5 text-[#080808] rounded-[12px] flex justify-center text-center items-center bg-[#00D3BA] px-7">
+              <div className="h-12 mt-5 md:mt-0 text-[#080808] rounded-[12px] flex justify-center text-center items-center bg-[#00D3BA] px-7">
                 Sign up
               </div>
             </div>
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center relative z-10">
-          <div className="max-w-[1500px] h-full md:px-14 px-4 pt-[100px] pb-[150px] w-full">
+          <div className="max-w-[2000px] h-full md:px-14 px-4 pt-[100px] pb-[150px] w-full">
      <div className="grid grid-cols-2">
           <div className=" text-white block  lg:hidden gap-5">
           <img src="/logo.png"  className="w-[100px] h-[60px]"  alt="/"/>
@@ -329,6 +329,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   );
