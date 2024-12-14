@@ -30,9 +30,9 @@ const Careers = () => {
                 <div className="">
                   <div className="flex justify-center">
                     <div className="max-w-[2000px] lg:px-14 px-3 w-full">
-                      <div className="mx-7">
-                        <Navbar />
-                      </div>
+                    <div className=" flex justify-center">
+                  <Navbar />
+                </div>
                       <div>
                         <div className="flex justify-center mt-[60px]"></div>
                         <div className="flex justify-center">

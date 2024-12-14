@@ -33,7 +33,7 @@ const Home = () => {
             {/* <div className="bg-gradient-to-b from-[#0a0a0a00] via-[#0a0a0a] via-61% from-20% w-full rounded-[15px]  pt-[6px]"> */}
             <div className="flex justify-center">
               <div className="max-w-[2000px] mx-auto lg:px-14 px-3 w-full">
-                <div className=" flex justify-center">
+              <div className=" flex justify-center">
                   <Navbar />
                 </div>
                 <div className="">
