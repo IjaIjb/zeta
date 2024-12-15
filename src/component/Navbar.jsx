@@ -204,7 +204,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            to={"/collaboratios"}
+            to={"/"}
             className="relative"
             // onMouseOut={() => setToggleColl((prev) => !prev)}
             // onMouseOver={() => setToggleColl((prev) => !prev)}
@@ -477,6 +477,136 @@ const Navbar = () => {
                   </span>
                 </div>
               </div>
+
+
+              <div className="relative">
+                <div className="flex gap-3">
+                  <Link
+               to={"/collaborators"}
+                    className="relative"
+                    onMouseOut={() => setToggleCar((prev) => !prev)}
+                    onMouseOver={() => setToggleCar((prev) => !prev)}
+                  >
+                    <h5 className="text-[#A3A3A3] cursor-pointer text-[20px]">
+                    Collaborations
+                    </h5>
+                    <div
+                      className={`${
+                        toggleColl ? "flex" : "hidden"
+                      } p-2 bg-[#171717] z-10 absolute -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
+                    >
+                   <div className="flex flex-col gap-3">
+                <h4 className="text-white">Partner with Us</h4>
+                <h4 className="text-white">
+                  Research Grants and Funding Opportunities
+                </h4>
+                <h4 className="text-white">Academic Collaborations</h4>
+                <h4 className="text-white">Resources</h4>
+                <h4 className="text-white">Blog and Insights</h4>
+                <h4 className="text-white">Case Studies</h4>
+                <h4 className="text-white">White Papers</h4>
+              </div>
+                    </div>
+                  </Link>
+                  <span className=" text-white pr-10">
+                    {toggleColl ? (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m16.9 13.4l-4.2-4.2c-.4-.4-1-.4-1.4 0l-4.2 4.2c-.4.4-.4 1 0 1.4s1 .4 1.4 0l3.5-3.5l3.5 3.5c.2.2.4.3.7.3c.3 0 .5-.1.7-.3c.4-.4.4-1 0-1.4z"
+                        />
+                      </svg>
+                    ) : (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 15.121a.997.997 0 0 1-.707-.293L7.05 10.586a1 1 0 0 1 1.414-1.414L12 12.707l3.536-3.535a1 1 0 0 1 1.414 1.414l-4.243 4.242a.997.997 0 0 1-.707.293Z"
+                        />
+                      </svg>
+                    )}
+                  </span>
+                </div>
+              </div>
+
+              <Link
+            to={"/"}
+            className="relative"
+            // onMouseOut={() => setToggleColl((prev) => !prev)}
+            // onMouseOver={() => setToggleColl((prev) => !prev)}
+          >
+            <h5 className="text-[#A3A3A3] cursor-pointer text-[18px]">
+              Marketplace
+            </h5>
+          </Link>
+
+
+          <div className="relative">
+                <div className="flex gap-3">
+                  <Link
+              to={"/contact-us"}
+                    className="relative"
+                    onMouseOut={() => setToggleCon((prev) => !prev)}
+                    onMouseOver={() => setToggleCon((prev) => !prev)}
+                  >
+                    <h5 className="text-[#A3A3A3] cursor-pointer text-[20px]">
+                    Contact Us
+                    </h5>
+                    <div
+                      className={`${
+                        toggleCon ? "flex" : "hidden"
+                      } p-2 bg-[#171717] z-10 absolute -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
+                    >
+                    <div className="flex flex-col gap-3">
+                <Link to="/contact-us#get-in-touch">
+                  <h4 className="text-white">Get in Touch</h4>
+                </Link>
+                <Link to="/contact-us#our-locations">
+                  <h4 className="text-white">Our Locations</h4>
+                </Link>
+              </div>
+                    </div>
+                  </Link>
+                  <span className=" text-white pr-10">
+                    {toggleCon ? (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m16.9 13.4l-4.2-4.2c-.4-.4-1-.4-1.4 0l-4.2 4.2c-.4.4-.4 1 0 1.4s1 .4 1.4 0l3.5-3.5l3.5 3.5c.2.2.4.3.7.3c.3 0 .5-.1.7-.3c.4-.4.4-1 0-1.4z"
+                        />
+                      </svg>
+                    ) : (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 15.121a.997.997 0 0 1-.707-.293L7.05 10.586a1 1 0 0 1 1.414-1.414L12 12.707l3.536-3.535a1 1 0 0 1 1.414 1.414l-4.243 4.242a.997.997 0 0 1-.707.293Z"
+                        />
+                      </svg>
+                    )}
+                  </span>
+                </div>
+              </div>
+
+
             </div>
           </div>
         )}
