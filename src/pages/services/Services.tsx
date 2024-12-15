@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../component/Navbar";
 import Solutions from "./Solutions";
 import Servi from "./Servi";
 import Footer from "../../component/Footer";
+import { useLocation } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 const Services = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const target = location.hash.replace("#", ""); // Remove the # from the hash
+      scroller.scrollTo(target, {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart",
+      });
+    }
+  }, [location]);
   return (
     <div>
       <div className="bg-[#262626] h-full  relative">
@@ -28,9 +42,9 @@ const Services = () => {
               <div className="bg-gradient-to-b from-[#0a0a0a00] via-[#0a0a0a] via-61% from-20% w-full rounded-[15px]  pt-[6px]">
                 <div className="flex justify-center">
                   <div className="max-w-[2000px]  lg:px-14 px-3 w-full">
-                  <div className=" flex justify-center">
-                  <Navbar />
-                </div>
+                    <div className=" flex justify-center">
+                      <Navbar />
+                    </div>
                     <div className="">
                       <div className="flex justify-center mt-[100px]">
                         {/* <div className="bg-[#0A201D] flex gap-2 hover:gap-4 cursor-pointer items-center p-2 rounded-full">
@@ -223,9 +237,12 @@ const Services = () => {
             </div>
           </div>
         </div>
-
-        <Servi />
-        <Solutions />
+        <div id="services">
+          <Servi />
+        </div>
+        <div id="solution">
+          <Solutions />
+        </div>
         <Footer />
       </div>
     </div>

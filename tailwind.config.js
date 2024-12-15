@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        "spin-slow": "spin 10s linear infinite",
-        "spin-reverse": "spin-reverse 15s linear infinite",
+        "spin-slow": "spin 30s linear infinite",
+        "spin-reverse": "spin-reverse 20s linear infinite",
         
       },
       keyframes: {

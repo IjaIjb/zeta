@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../component/Navbar";
 import CoreValues from "./CoreValues";
 import FutureProof from "../home/FutureProof";
 import PicturesAlone from "../home/PicturesAlone";
 import LatestNews from "../home/LatestNews";
 import Footer from "../../component/Footer";
+import { useLocation } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 const About = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const target = location.hash.replace("#", ""); // Remove the # from the hash
+      scroller.scrollTo(target, {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart",
+      });
+    }
+  }, [location]);
   return (
     <div className="bg-[#262626] h-full  relative">
       <div className="relative">
@@ -29,17 +43,17 @@ const About = () => {
             <div className="bg-gradient-to-b from-[#0a0a0a00] via-[#0a0a0a] via-61% from-20% w-full rounded-[15px]  pt-[6px]">
               <div className="flex justify-center">
                 <div className="max-w-[2000px]  lg:px-14 px-3 w-full">
-                <div className=" flex justify-center">
-                  <Navbar />
-                </div>
+                  <div className=" flex justify-center">
+                    <Navbar />
+                  </div>
                   <div className="">
-                    <div className="flex justify-center mt-[100px]">
+                    <div className="flex justify-center mt-[170px]">
                       {/* <div className="bg-[#0A201D] flex gap-2 hover:gap-4 cursor-pointer items-center p-2 rounded-full">
                   <div className="bg-[#23F7DD] text-[8px] px-1 rounded-full">New</div>
                <h5 className="text-[#F5F5F5] text-[12px]">Spica 1.8 Live on Mainnet</h5>
                 </div> */}
                     </div>
-                    <div className="flex justify-center ">
+                    <div id="whoweare" className="flex justify-center ">
                       <h3 className="text-[#f5f5f5] text-center leading-[45px] lg:leading-[60px]  z-10 text-[40px] lg:text-[4rem] ">
                         Who We Are
                       </h3>
@@ -136,7 +150,10 @@ const About = () => {
                       <div className="z-20 flex justify-center">
                         <div className="max-w-[1100px] w-full">
                           <div className="grid md:grid-cols-2 gap-5 w-full">
-                            <div className="bg-[#262626] w-full z-10 rounded-[1rem] py-7 px-5">
+                            <div
+                              id="mission"
+                              className="bg-[#262626] w-full z-10 rounded-[1rem] py-7 px-5"
+                            >
                               <div className="flex flex-col ">
                                 <h6 className="text-[#EFEFEF] text-[15px]">
                                   We are to serve you right and give you the
@@ -149,7 +166,10 @@ const About = () => {
                               </div>
                             </div>
 
-                            <div className="bg-[#262626] w-full z-10 rounded-[1rem] py-7 px-5">
+                            <div
+                              id="vision"
+                              className="bg-[#262626] w-full z-10 rounded-[1rem] py-7 px-5"
+                            >
                               <div className="flex flex-col ">
                                 <h6 className="text-[#EFEFEF] text-[15px]">
                                   We are to serve you right and give you the
@@ -157,7 +177,7 @@ const About = () => {
                                   of ou rproducts
                                 </h6>
                                 <h6 className="text-[#23F7DD] text-end text-[35px]">
-                                  OUR VISION
+                                  Oor Mission
                                 </h6>
                               </div>
                             </div>
@@ -177,10 +197,14 @@ const About = () => {
         </div>
       </div>
 
-      <CoreValues />
+      <div id="coreValues">
+        <CoreValues />
+      </div>
       <FutureProof />
       <PicturesAlone />
+
       <LatestNews />
+
       <Footer />
     </div>
   );

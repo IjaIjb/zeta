@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../component/Navbar";
-import FeaturedPartners from "../home/FeaturedPartners";
 import FocusArea from "./FocusArea";
 import Footer from "../../component/Footer";
+import PicturesAlone from "../home/PicturesAlone";
+import { useLocation } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 const Research = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const target = location.hash.replace("#", ""); // Remove the # from the hash
+      scroller.scrollTo(target, {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart",
+      });
+    }
+  }, [location]);
   return (
     <div className="bg-[#262626] h-full  relative">
       <div className="bg-[#262626] h-full  relative">
@@ -25,18 +39,76 @@ const Research = () => {
 
           <div className="lg:p-3 p-2 flex w-full  justify-center ">
             <div className="max-w-[2000px] overflow-hidden z-10 bg-black rounded-[50px]  w-full">
-              <div className="bg-gradient-to-b from-[#0a0a0a00] via-[#0a0a0a] via-61% from-20% w-full rounded-[15px]  pt-[6px]">
+              <div className="bg-gradient-to-b from-[#0a0a0a00] via-[#0a0a0a] via-61% from-20% w-full rounded-[15px] pb-[150px] pt-[6px]">
                 <div className="flex justify-center">
                   <div className="max-w-[2000px]  lg:px-14 px-3 w-full">
-                  <div className=" flex justify-center">
-                  <Navbar />
-                </div>
-                    <div className="">
-                      <div className="flex justify-center mt-[100px]">
+                    <div className=" flex justify-center">
+                      <Navbar />
+                    </div>
+                    <div className="relative">
+                      <div className="flex justify-center mt-[200px]">
                         {/* <div className="bg-[#0A201D] flex gap-2 hover:gap-4 cursor-pointer items-center p-2 rounded-full">
                   <div className="bg-[#23F7DD] text-[8px] px-1 rounded-full">New</div>
                <h5 className="text-[#F5F5F5] text-[12px]">Spica 1.8 Live on Mainnet</h5>
                 </div> */}
+                      </div>
+                      <div className="absolute lg:block hidden w-full h-full inset-0 bg-cover">
+                        <div
+                          style={{
+                            transform: "rotate(-10deg)", // Rotate the image slightly left
+                            transformOrigin: "center",
+                            top: "-60%",
+                            left: "-16%", // Push the image to the right side
+                            position: "absolute", // Ensure it's positioned correctly
+                            zIndex: 1, // Ensure the image is behind the gradient
+                          }}
+                          className="absolute w-[700px] opacity-50 h-[700px]"
+                        >
+                          <img
+                            src="https://cdn.multiversx.com/webflow/Astronaut-Floating.webp"
+                            alt=""
+                            loading="eager"
+                            className="absolute w-full h-full object-cover"
+                          />
+                        </div>
+                        {/* Gradient overlay */}
+                        <div
+                          className="absolute inset-1 bg-gradient-to-b from-[#0a0a0a00] via-[#0a0a0a] via-16% from-10%"
+                          style={{
+                            left: "-10%",
+                            top: "70%",
+                            zIndex: 2, // Ensure the gradient is above the image
+                          }}
+                        ></div>
+                      </div>
+                      <div className="absolute lg:block hidden w-full h-full inset-0 bg-cover">
+                        <div
+                          style={{
+                            transform: "rotate(-70deg)", // Rotate the image slightly left
+                            transformOrigin: "center",
+                            top: "-100%",
+                            right: "-15%", // Push the image to the right side
+                            position: "absolute", // Ensure it's positioned correctly
+                            zIndex: 1, // Ensure the image is behind the gradient
+                          }}
+                          className="absolute w-[550px] opacity-40 h-[550px]"
+                        >
+                          <img
+                            src="https://cdn.multiversx.com/webflow/ecosystem_visual-1.webp"
+                            alt=""
+                            loading="eager"
+                            className="absolute w-full h-full object-cover"
+                          />
+                        </div>
+                        {/* Gradient overlay */}
+                        <div
+                          className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a00] via-[#0a0a0a] via-61% from-20%"
+                          style={{
+                            right: "-10%",
+                            top: "70%",
+                            zIndex: 2, // Ensure the gradient is above the image
+                          }}
+                        ></div>
                       </div>
                       <div className="flex justify-center ">
                         <h3 className="text-[#f5f5f5] text-center leading-[45px] lg:leading-[60px]  z-10 text-[40px] lg:text-[4rem] ">
@@ -72,102 +144,6 @@ const Research = () => {
                           </div>
                         </div>
                       </div>
-
-                      <div className="relative ">
-                        <div className="absolute lg:block hidden w-full h-full inset-0 bg-cover">
-                          <div
-                            style={{
-                              transform: "rotate(40deg)", // Rotate the image slightly left
-                              transformOrigin: "center",
-                              top: "-180%",
-                              left: "-20%", // Push the image to the right side
-                              position: "absolute", // Ensure it's positioned correctly
-                              zIndex: 1, // Ensure the image is behind the gradient
-                            }}
-                            className="absolute w-[400px] h-[400px]"
-                          >
-                            <img
-                              src="https://cdn.multiversx.com/webflow/Glass%20shield%404-1080x1080%202.webp"
-                              alt=""
-                              loading="eager"
-                              className="absolute w-full h-full object-cover"
-                            />
-                          </div>
-                          {/* Gradient overlay */}
-                          <div
-                            className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a00] via-[#0a0a0a] via-61% from-20%"
-                            style={{
-                              left: "-10%",
-                              top: "-70%",
-                              zIndex: 2, // Ensure the gradient is above the image
-                            }}
-                          ></div>
-                        </div>
-                        <div className="absolute lg:block hidden w-full h-full inset-0 bg-cover">
-                          <div
-                            style={{
-                              transform: "rotate(-70deg)", // Rotate the image slightly left
-                              transformOrigin: "center",
-                              top: "-180%",
-                              right: "-25%", // Push the image to the right side
-                              position: "absolute", // Ensure it's positioned correctly
-                              zIndex: 1, // Ensure the image is behind the gradient
-                            }}
-                            className="absolute w-[550px] h-[550px]"
-                          >
-                            <img
-                              src="https://cdn.multiversx.com/webflow/ecosystem_visual-1.webp"
-                              alt=""
-                              loading="eager"
-                              className="absolute w-full h-full object-cover"
-                            />
-                          </div>
-                          {/* Gradient overlay */}
-                          <div
-                            className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a00] via-[#0a0a0a] via-61% from-20%"
-                            style={{
-                              right: "-10%",
-                              top: "-70%",
-                              zIndex: 2, // Ensure the gradient is above the image
-                            }}
-                          ></div>
-                        </div>
-                        <div className="z-20 flex justify-center">
-                          <div className="max-w-[1100px] w-full">
-                            <div className="grid md:grid-cols-2 gap-5 w-full">
-                              <div className="bg-[#262626] w-full z-10 rounded-[1rem] py-7 px-5">
-                                <div className="flex flex-col ">
-                                  <h6 className="text-[#EFEFEF] text-[15px]">
-                                    We are to serve you right and give you the
-                                    best experience in navigation, biotech and
-                                    all of ou rproducts
-                                  </h6>
-                                  <h6 className="text-[#23F7DD] text-end text-[35px]">
-                                    Our Mission
-                                  </h6>
-                                </div>
-                              </div>
-
-                              <div className="bg-[#262626] w-full z-10 rounded-[1rem] py-7 px-5">
-                                <div className="flex flex-col ">
-                                  <h6 className="text-[#EFEFEF] text-[15px]">
-                                    We are to serve you right and give you the
-                                    best experience in navigation, biotech and
-                                    all of ou rproducts
-                                  </h6>
-                                  <h6 className="text-[#23F7DD] text-end text-[35px]">
-                                    OUR VISION
-                                  </h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="flex justify-center pb-10">
-                        <div className="max-w-[2000px] md:px-14 px-4 w-full"></div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -176,7 +152,7 @@ const Research = () => {
           </div>
         </div>
         <FocusArea />
-        <FeaturedPartners />
+        <PicturesAlone />
 
         <Footer />
       </div>

@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../component/Navbar";
 import CareerChoice from "./CareerChoice";
 import PicturesAlone from "../home/PicturesAlone";
 import LatestNews from "../home/LatestNews";
 import Footer from "../../component/Footer";
+import { useLocation } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 const Careers = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const target = location.hash.replace("#", ""); // Remove the # from the hash
+      scroller.scrollTo(target, {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart",
+      });
+    }
+  }, [location]);
   return (
     <div>
       <div className="bg-black h-full  relative">
@@ -30,12 +44,12 @@ const Careers = () => {
                 <div className="">
                   <div className="flex justify-center">
                     <div className="max-w-[2000px] lg:px-14 px-3 w-full">
-                    <div className=" flex justify-center">
-                  <Navbar />
-                </div>
-                      <div>
-                        <div className="flex justify-center mt-[60px]"></div>
-                        <div className="flex justify-center mt-[60px]">
+                      <div className=" flex justify-center">
+                        <Navbar />
+                      </div>
+                      <div id="join">
+                        {/* <div className="flex justify-center mt-[60px]"></div> */}
+                        <div className="flex justify-center mt-[180px]">
                           <div className="bg-[#0A201D] w-fit border border-[#6EFBF2] flex gap-2 hover:gap-4 cursor-pointer items-center px-1 rounded-full">
                             {/* <div className="bg-[#23F7DD] text-[8px] px-1 rounded-full">New</div> */}
                             <h5 className="text-[#6EFBF2] text-[12px]">
@@ -82,9 +96,12 @@ const Careers = () => {
               {/* <img src="https://cdn.prod.website-files.com/6597cc7be68d63ec0c8ce338/65ba103c2f207388cf1017e1_multiversx-team%20(1).webp" loading="eager" sizes="(max-width: 2528px) 100vw, 2528px" srcset="https://cdn.prod.website-files.com/6597cc7be68d63ec0c8ce338/65ba103c2f207388cf1017e1_multiversx-team%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/6597cc7be68d63ec0c8ce338/65ba103c2f207388cf1017e1_multiversx-team%20(1)-p-800.webp 800w, https://cdn.prod.website-files.com/6597cc7be68d63ec0c8ce338/65ba103c2f207388cf1017e1_multiversx-team%20(1)-p-1080.webp 1080w, https://cdn.prod.website-files.com/6597cc7be68d63ec0c8ce338/65ba103c2f207388cf1017e1_multiversx-team%20(1)-p-1600.webp 1600w, https://cdn.prod.website-files.com/6597cc7be68d63ec0c8ce338/65ba103c2f207388cf1017e1_multiversx-team%20(1)-p-2000.webp 2000w, https://cdn.prod.website-files.com/6597cc7be68d63ec0c8ce338/65ba103c2f207388cf1017e1_multiversx-team%20(1).webp 2528w" alt="Group photo of the MultiversX team on stage at xDays 2023" className="img_careers"></img> */}
             </div>
           </div>
-
-          <CareerChoice />
-          <PicturesAlone />
+          <div id="positions">
+            <CareerChoice />
+          </div>
+          <div id="internship">
+            <PicturesAlone />
+          </div>
           <LatestNews />
           <Footer />
         </div>

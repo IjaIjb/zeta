@@ -29,13 +29,12 @@ const Home = () => {
         ></div>
 
         <div className="lg:p-3 p-2 flex w-full  justify-center ">
-          <div className=" overflow-hidden z-10 bg-black min-h-screen rounded-[50px]  w-full">
+          <div className=" overflow-hidden z-10 bg-black  rounded-[50px]  w-full">
             {/* <div className="bg-gradient-to-b from-[#0a0a0a00] via-[#0a0a0a] via-61% from-20% w-full rounded-[15px]  pt-[6px]"> */}
             <div className="flex justify-center">
               <div className="max-w-[2000px] mx-auto lg:px-14 px-3 w-full">
-              <div className=" flex justify-center">
-                  <Navbar />
-                </div>
+                <Navbar />
+
                 <div className="">
                   <div className="flex justify-center mt-[200px]">
                     <div className="bg-[#0A201D] flex gap-2 hover:gap-4 cursor-pointer items-center p-2 rounded-full">
