@@ -3,8 +3,6 @@ import Navbar from "../../component/Navbar";
 import Footer from "../../component/Footer";
 import { useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
-import Servi from "../services/Servi";
-
 const Collaborators = () => {
   const location = useLocation();
 
