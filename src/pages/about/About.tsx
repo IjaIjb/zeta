@@ -173,7 +173,7 @@ const About = () => {
                                 We envision a world where aging-related diseases are eradicated, and personalized health solutions are accessible to everyone.
                                 </h6>
                                 <h6 className="text-[#23F7DD] text-end text-[35px]">
-                                  Our Mission
+                                  Our Vission
                                 </h6>
                               </div>
                             </div>
