@@ -59,8 +59,8 @@ const About = () => {
                       </h3>
                     </div>
                     <div className="flex justify-center">
-                      <h3 className="text-[#737373] z-10 text-center text-[19px] md:text-[25px] ">
-                        Revolutionizing Longevity and Cell Rejuvenation
+                      <h3 className="text-[#737373] z-10 text-center max-w-[900px] text-[19px] md:text-[25px] ">
+                      Zetakree Biotech is a leader in AI-powered biotechnology and longevity solutions. Our mission is to harness data, technology, and science to combat aging and improve health outcomes. With a focus on telomere research, predictive analytics, and health optimization, we are reshaping the future of medicine
                       </h3>
                     </div>
 
@@ -156,9 +156,7 @@ const About = () => {
                             >
                               <div className="flex flex-col ">
                                 <h6 className="text-[#EFEFEF] text-[15px]">
-                                  We are to serve you right and give you the
-                                  best experience in navigation, biotech and all
-                                  of ou rproducts
+                                Our mission is to empower individuals to live longer, healthier lives using cutting-edge AI and biotechnology. 
                                 </h6>
                                 <h6 className="text-[#23F7DD] text-end text-[35px]">
                                   Our Mission
@@ -172,12 +170,10 @@ const About = () => {
                             >
                               <div className="flex flex-col ">
                                 <h6 className="text-[#EFEFEF] text-[15px]">
-                                  We are to serve you right and give you the
-                                  best experience in navigation, biotech and all
-                                  of ou rproducts
+                                We envision a world where aging-related diseases are eradicated, and personalized health solutions are accessible to everyone.
                                 </h6>
                                 <h6 className="text-[#23F7DD] text-end text-[35px]">
-                                  Oor Mission
+                                  Our Mission
                                 </h6>
                               </div>
                             </div>

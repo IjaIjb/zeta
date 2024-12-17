@@ -48,8 +48,8 @@ const Contact = () => {
           </h3>
         </div>
         <div className="flex justify-center">
-          <h3 className="text-[#737373] z-10 text-center text-[19px] md:text-[25px] ">
-            Revolutionizing Longevity and Cell Rejuvenation
+          <h3 className="text-[#737373] max-w-[600px] z-10 text-center text-[19px] md:text-[25px] ">
+         Have questions or want to collaborate? Let’s build a healthier, longer future together.
           </h3>
         </div>
 

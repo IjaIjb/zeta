@@ -8,7 +8,8 @@ const Solutions = () => {
           <div className="relative"></div>
           <div className="">
             <h4 className="text-[25px] text-white font-semibold mb-2">
-              Solutions
+            Our upcoming app offers:
+
             </h4>
           </div>
           <div className="grid md:grid-cols-3 gap-4">
@@ -22,7 +23,7 @@ const Solutions = () => {
 
               <div className="p-3  flex justify-center items-center ">
                 <h5 className="text-white text-center text-[20px]">
-                  AI-Powered Healthcare Tools
+                Real-time tracking of vitals, sleep, diet, fitness, and chronic conditions.
                 </h5>
               </div>
             </div>
@@ -37,7 +38,8 @@ const Solutions = () => {
 
               <div className="p-3  flex justify-center items-center ">
                 <h5 className="text-white text-center text-[20px]">
-                  Biomedical Devices for Regenerative Medicine
+                Personalized longevity predictions, disease risk assessments, and wellness plans.
+
                 </h5>
               </div>
             </div>
@@ -51,7 +53,7 @@ const Solutions = () => {
 
               <div className="p-3  flex justify-center items-center ">
                 <h5 className="text-white text-center text-[20px]">
-                  Microorganism Experimentation
+                AI-powered diagnostics and mental health monitoring.
                 </h5>
               </div>
             </div>

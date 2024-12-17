@@ -48,12 +48,12 @@ const Home = () => {
                   </div>
                   <div className="flex justify-center ">
                     <h3 className="text-[#f5f5f5] text-center leading-[45px] lg:leading-[60px]  z-10 text-[40px] lg:text-[4rem] ">
-                      Welcome to Zeta Rekot Biotech
+                    Welcome to Zetakree Biotech
                     </h3>
                   </div>
                   <div className="flex justify-center">
-                    <h3 className="text-[#737373] z-10 text-center text-[19px] md:text-[25px] ">
-                      Revolutionizing Longevity and Cell Rejuvenation
+                    <h3 className="text-[#737373] z-10 max-w-[800px] text-center text-[19px] md:text-[25px] ">
+                    Welcome to Zetakree Biotech, where science, AI, and innovation converge to redefine longevity and improve lives.
                     </h3>
                   </div>
 

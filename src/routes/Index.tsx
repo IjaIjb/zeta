@@ -26,7 +26,7 @@ const routes = [
       component: ResearchPage,
     },
     {
-      path: "/services",
+      path: "/solutions",
       component: ServicePage,
     },
     {

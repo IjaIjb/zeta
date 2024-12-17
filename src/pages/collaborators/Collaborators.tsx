@@ -3,6 +3,7 @@ import Navbar from "../../component/Navbar";
 import Footer from "../../component/Footer";
 import { useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
+import Servi from "../services/Servi";
 
 const Collaborators = () => {
   const location = useLocation();
@@ -19,22 +20,24 @@ const Collaborators = () => {
   }, [location]);
   return (
     <div>
-      <div className="bg-[#262626] h-full">
-        <div className="flex bg-black h-full justify-center">
+      <div className="bg-[#262626] relative overflow-hidden h-full">
+        <div className="flex relative overflow-hidden bg-black h-full justify-center">
           <div className="max-w-[2000px] mx-auto lg:px-14 px-3 w-full">
             <Navbar />
 
-            <div className="flex items-center mt-[180px] pb-[150px]">
+            <div className="flex items-center overflow-hidden mt-[180px] pb-[150px]">
               <div className="flex flex-col">
-                <h4 className="text-[75px] text-white leading-[85px] max-w-[700px]">
-                  The green solution chosen by nations, businesses, creatives
-                  and individuals.
+                <h4 className="md:text-[55px] text-[37px] text-white leading-[85px] max-w-[700px]">
+                The Role of AI in Longevity Prediction and Health Optimization
                 </h4>
                 <h5 className="text-[#A3A3A3] text-[24px] max-w-[650px]">
-                  MultiversX is leading the way towards a more responsible and
-                  sustainable infrastructure for all digital things.
+                Understanding Telomeres and Their Impact on Aging
+                </h5>
+                <h5 className="text-[#A3A3A3] text-[24px] max-w-[650px]">
+                How Wearables and AI Are Redefining Wellness Management
                 </h5>
               </div>
+              
               <div
                 style={{
                   //   transform: "rotate(-70deg)", // Rotate the image slightly left
@@ -46,7 +49,7 @@ const Collaborators = () => {
                 }}
                 className="absolute w-[750px] h-[750px]"
               >
-                <div className="relative lg:w-[800px] lg:h-[800px] w-[250px] h-[250px] md:w-[600px] md:h-[600px] flex items-center justify-center">
+                <div className="relative overflow-hidden lg:w-[800px] lg:h-[800px] w-[250px] h-[250px] md:w-[600px] md:h-[600px] flex items-center justify-center">
                   {/* Inner Orbit */}
                   <div className="absolute w-full h-full animate-spin-slow">
                     <img
@@ -82,13 +85,14 @@ const Collaborators = () => {
           </div>
         </div>
 
+
         {/* partner */}
         <div className="flex  h-full justify-center">
           <div className="max-w-[2000px] mx-auto lg:px-14 px-3 w-full">
             <div className="">
               <div className="">
                 <h4 className="md:text-[38px] mb-7 mt-20 text-white font">
-                  OurPartners
+                  Our Partners
                 </h4>
               </div>
               <div className="grid md:grid-cols-3 gap-3">
@@ -396,7 +400,7 @@ const Collaborators = () => {
           </div>
         </div>
 
-        {/* resource*/}
+        {/* blog*/}
         <div className="flex  h-full justify-center">
           <div className="max-w-[2000px] mx-auto lg:px-14 px-3 w-full">
             <div className="">
@@ -542,6 +546,35 @@ const Collaborators = () => {
             </div>
           </div>
         </div>
+
+        {/* white papers */}
+<div className="flex justify-center mt-10">
+        <div className="max-w-[2000px] h-full md:px-14 px-4 w-full ">
+          <div className="relative">
+            {/* Custom Arrow Buttons Positioned in Front of the Heading */}
+            <div className="flex justify-between items-center mb-5">
+              <div className="">
+              <h4 className="md:text-[38px]  text-white font">
+                  White Papers
+                  </h4>
+              </div>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="bg-[#171717] rounded-[13px] flex justify-center text-center items-center h-[100px] p-1">
+                <h5 className="text-white text-center max-w-[460px] text-[20px]">Biomarkers of Aging: Insights and Applications in Predictive Health</h5>
+              </div>
+
+              <div className="bg-[#171717] rounded-[13px] flex justify-center items-center h-[100px] p-1">
+                <h5 className="text-white text-center max-w-[460px] text-[20px]">Leveraging AI for Personalized Longevity and Disease Prevention</h5>
+              </div>
+
+         
+            </div>
+          </div>
+        </div>
+      </div>
+
+
         <Footer />
       </div>
     </div>

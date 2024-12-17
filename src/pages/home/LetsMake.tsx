@@ -6,14 +6,16 @@ const LetsMake = () => {
       <div className="flex justify-center">
         <div className="max-w-[2000px] h-full md:px-14 px-4 w-full ">
           <div className="flex justify-center mt-20">
-            <h4 className="text-[#F5F5F5] leading-[45px] lg:leading-[75px] text-center max-w-[700px] text-[35px] lg:text-[75px] ">
-              AI-Powered Healthcare Tools
+            <h4 className="text-[#F5F5F5] leading-[45px] lg:leading-[55px] text-center max-w-[900px] text-[35px] lg:text-[50px] ">
+            Revolutionizing Longevity with AI and Biomarker Insights
+
             </h4>
           </div>
-          <h4 className="text-center text-[#F5F5F5] text-[16px] opacity-40 pt-4 pb-10">
-            Biomedical Devices for Regenerative Medicine
+          <div className="flex justify-center">
+          <h4 className="text-center max-w-[800px] text-[#F5F5F5] text-[16px] opacity-40 pt-4 pb-10">
+          Our groundbreaking AI software utilizes patient data and critical biomarkers to predict life expectancy, offering personalized guidance to extend lifespan. At Zetakree, we help you not only live longer but live better
           </h4>
-
+          </div>
           <div className="grid grid-cols-12 gap-5">
             <div className="lg:col-span-3 md:col-span-6 col-span-12">
               <div className="bg-[#171717] h-[350px] pb-5 overflow-hidden rounded-[40px] flex flex-col justify-between">

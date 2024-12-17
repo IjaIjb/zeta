@@ -113,13 +113,13 @@ const Navbar = () => {
           </Link>
 
           <Link
-            to={"/services"}
+            to={"/solutions"}
             className="relative"
             onMouseOut={() => setToggleSer((prev) => !prev)}
             onMouseOver={() => setToggleSer((prev) => !prev)}
           >
             <h5 className="text-[#A3A3A3] cursor-pointer text-[18px]">
-              Services
+             Solutions
             </h5>
             <div
               className={`${
@@ -372,13 +372,13 @@ const Navbar = () => {
               <div className="relative">
                 <div className="flex gap-3">
                   <Link
-                    to={"/services"}
+                    to={"/solutions"}
                     className="relative"
                     onMouseOut={() => setToggleSer((prev) => !prev)}
                     onMouseOver={() => setToggleSer((prev) => !prev)}
                   >
                     <h5 className="text-[#A3A3A3] cursor-pointer text-[20px]">
-                      Services
+                  Solutions
                     </h5>
                     <div
                       className={`${

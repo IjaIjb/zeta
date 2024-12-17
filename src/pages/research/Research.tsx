@@ -5,6 +5,7 @@ import Footer from "../../component/Footer";
 import PicturesAlone from "../home/PicturesAlone";
 import { useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
+import ResearchServices from "./ResearchServices";
 
 const Research = () => {
   const location = useLocation();
@@ -152,6 +153,9 @@ const Research = () => {
           </div>
         </div>
         <FocusArea />
+    
+        <ResearchServices />
+     
         <PicturesAlone />
 
         <Footer />

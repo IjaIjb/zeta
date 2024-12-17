@@ -16,13 +16,13 @@ const ExploreEco = () => {
         <div className="col-span-5 px-6">
           <div className="flex flex-col gap-4">
             <h4 className="text-white text-[29px] lg:max-w-[200px] font-semibold">
-              Explore the System
+            Explore Our Innovations
             </h4>
-            <h4 className="text-[#737373] text-[19px] lg:max-w-[215px]">
-              Decentralized worlds and tokenized economies at internet scale.
+            <h4 className="text-[#737373] text-[19px] lg:max-w-[315px]">
+            Learn more about how our technologies and research are transforming the future of health and longevity
             </h4>
             <div className="flex whitespace-nowrap gap-4 z-10 mt-3 w-fit lg:mt-0 py-3 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]">
-              Explore the Ecosystem
+            Explore Our Innovations
               <svg
                 className="w-5 h-5"
                 viewBox="0 0 25 16"
