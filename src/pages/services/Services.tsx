@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "../../component/Navbar";
 import Solutions from "./Solutions";
-import Servi from "./Servi";
 import Footer from "../../component/Footer";
 import { useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
