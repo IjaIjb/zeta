@@ -33,7 +33,7 @@ const ComprehensiveHealth = () => {
               </div> */}
 
               <div className="grid md:grid-cols-3 lg:px-14 px-3 gap-4">
-                <div className="bg-[#171717] z-10 rounded-[13px] flex justify-center items-center h-[300px] p-1">
+                <div className="bg-[#171717] z-[1] rounded-[13px] flex justify-center items-center h-[300px] p-1">
                   <div>
                     <div className="flex justify-center text-center">
                       <svg
@@ -69,7 +69,7 @@ const ComprehensiveHealth = () => {
                   </div>
                 </div>
 
-                <div className="bg-[#171717] z-10 rounded-[13px] flex justify-center items-center h-[300px] p-1">
+                <div className="bg-[#171717] z-[1] rounded-[13px] flex justify-center items-center h-[300px] p-1">
                   <div>
                     <div className="flex justify-center text-center">
                       <svg
@@ -105,7 +105,7 @@ const ComprehensiveHealth = () => {
                   </div>
                 </div>
 
-                <div className="bg-[#171717] z-10 rounded-[13px] flex justify-center items-center h-[300px] p-1">
+                <div className="bg-[#171717] z-[1] rounded-[13px] flex justify-center items-center h-[300px] p-1">
                   <div>
                     <div className="flex justify-center text-center">
                       <svg

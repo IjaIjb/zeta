@@ -25,7 +25,7 @@ const Careers = () => {
       <div className="bg-black h-full  relative">
         <div className="bg-black h-full  relative">
           <div className="relative">
-            <div
+            {/* <div
               className="absolute inset-0 bg-cover "
               style={{
                 backgroundImage:
@@ -37,10 +37,11 @@ const Careers = () => {
                 left: "-10%", // Push the image to the right side
                 position: "absolute", // Ensure it's positioned correctly
               }}
-            ></div>
+            ></div> */}
 
             <div className="lg:p-2 p-2 flex w-full  justify-center ">
-              <div className="relative max-w-[2000px] h-screen overflow-hidden z-10 bg-[#0e0e0e] rounded-[20px] w-full bg-[url('https://cdn.prod.website-files.com/6597cc7be68d63ec0c8ce338/65ba103c2f207388cf1017e1_multiversx-team%20(1).webp')] bg-cover bg-center bg-no-repeat">
+              <div className="relative max-w-[2000px]  overflow-hidden z-10 bg-[#0e0e0e] rounded-[20px] w-full ">
+              {/* <div className="relative max-w-[2000px] h-screen overflow-hidden z-10 bg-[#0e0e0e] rounded-[20px] w-full bg-[url('https://cdn.prod.website-files.com/6597cc7be68d63ec0c8ce338/65ba103c2f207388cf1017e1_multiversx-team%20(1).webp')] bg-cover bg-center bg-no-repeat"> */}
                 <div className="">
                   <div className="flex justify-center">
                     <div className="max-w-[2000px] lg:px-14 px-3 w-full">
@@ -99,10 +100,10 @@ const Careers = () => {
           <div id="positions">
             <CareerChoice />
           </div>
-          <div id="internship">
+          {/* <div id="internship">
             <PicturesAlone />
-          </div>
-          <LatestNews />
+          </div> */}
+          {/* <LatestNews /> */}
           <Footer />
         </div>
       </div>

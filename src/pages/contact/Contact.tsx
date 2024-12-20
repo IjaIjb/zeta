@@ -30,9 +30,11 @@ const Contact = () => {
         >
           <div className="flex justify-center">
             <div className="max-w-[2000px] lg:px-14 px-3 w-full">
-              <Navbar />
+              <div className="flex justify-center">
+                <Navbar />
+              </div>
               <div className="flex justify-center mt-[200px] mb-[200px]">
-                <h3 className="text-white text-center text-[60px] font-[500] max-w-[700px]">
+                <h3 className="text-white text-center text-[40px] md:text-[60px] font-[500] max-w-[700px]">
                   We are closer to you than you think, Get in Touch
                 </h3>
               </div>
@@ -47,13 +49,14 @@ const Contact = () => {
             Reach out to us
           </h3>
         </div>
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <h3 className="text-[#737373] max-w-[600px] z-10 text-center text-[19px] md:text-[25px] ">
-         Have questions or want to collaborate? Let’s build a healthier, longer future together.
+            Have questions or want to collaborate? Let’s build a healthier,
+            longer future together.
           </h3>
-        </div>
+        </div> */}
 
-        <div className="flex mt-5 mb-10 justify-center">
+        {/* <div className="flex mt-5 mb-10 justify-center">
           <div className="lg:flex z-10 gap-4">
             <div className="flex z-10 gap-2 justify-center py-2 text-white bg-[#262626] items-center text-[16px] px-3  rounded-[12px]">
               Book Consultation
@@ -75,11 +78,125 @@ const Contact = () => {
               Contact Us
             </div>
           </div>
+        </div> */}
+      </div>
+      {/* <div className="grid lg:grid-cols-2 gap-4 lg:gap-10 items-center"> */}
+      <div className="flex justify-center">
+      <div className="max-w-[2000px] lg:px-14 px-3 w-full">
+          <form>
+            <div className="grid md:grid-cols-2 gap-4">
+            <div className="relative w-full mb-6 mt-4">
+              <label
+                htmlFor="first_name"
+                className="block mb-2 text-[24px] font-semibold text-white"
+              >
+                First Name
+              </label>
+              <input
+                type="text"
+                className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
+                placeholder="Enter First Name"
+                name="first_name"
+                // onChange={handleChange}
+                // onInput={handleInput}
+                required
+              />
+            </div>
+            <div className="relative w-full mb-6 mt-4">
+              <label
+                htmlFor="last_name"
+                className="block mb-2 text-[24px] font-semibold text-white"
+              >
+                Last Name
+              </label>
+              <input
+                type="text"
+                className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
+                placeholder="Enter Last Name"
+                name="last_name"
+                // onChange={handleChange}
+                // onInput={handleInput}
+                required
+              />
+            </div>
+
+         
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4">
+            <div className="relative w-full mb-6">
+              <label
+                htmlFor="email"
+                className="block mb-2 text-[24px] font-semibold text-white"
+              >
+                Email Address
+              </label>
+              <input
+                type="email"
+                className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
+                placeholder="Enter email"
+                name="email"
+                required
+                // onChange={handleChange}
+                // value={userData.email}
+              />
+              {/* {emailError && <div className="text-red-500 text-sm mt-1">{emailError}</div>} */}
+            </div>
+            <div className="relative w-full mb-6 ">
+              <label
+                htmlFor="phone"
+                className="block mb-2 text-[24px] font-semibold text-white"
+              >
+                Phone Number
+              </label>
+              <input
+                type="number"
+                className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
+                placeholder="Enter Phone Number"
+                name="phone"
+                // onChange={handleChange}
+                // onInput={handleInput}
+                required
+              />
+            </div>
+
+           
+            </div>
+
+            <div className="mb-6 ">
+              <label
+                htmlFor="message"
+                className="block mb-2 text-[24px] font-semibold text-white"
+              >
+                Reason for your message
+              </label>
+              <textarea
+                id="message"
+                rows={4}
+                required
+                name="message"
+                // onChange={() => handleChange}
+                className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
+                placeholder="Enter your message here..."
+              ></textarea>
+            </div>
+            <div className="lg:pl-4 mb-7">
+              <button
+                type="submit"
+                className="py-4 px-9  text-lg font-medium  bg-[#23F7DD] rounded-lg "
+              >
+               Submit
+              </button>
+            </div>
+          </form>
+</div>
         </div>
-      </div>
-      <div id="our-locations">
-        <ContactMap />
-      </div>
+          <div id="our-locations">
+          <ContactMap />
+        </div>
+        {/* </div> */}
+   
+
       <Footer />
     </div>
   );

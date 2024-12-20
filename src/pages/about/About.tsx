@@ -60,7 +60,12 @@ const About = () => {
                     </div>
                     <div className="flex justify-center">
                       <h3 className="text-[#737373] z-10 text-center max-w-[900px] text-[19px] md:text-[25px] ">
-                      Zetakree Biotech is a leader in AI-powered biotechnology and longevity solutions. Our mission is to harness data, technology, and science to combat aging and improve health outcomes. With a focus on telomere research, predictive analytics, and health optimization, we are reshaping the future of medicine
+                        Zetakree Biotech is a leader in AI-powered biotechnology
+                        and longevity solutions. Our mission is to harness data,
+                        technology, and science to combat aging and improve
+                        health outcomes. With a focus on telomere research,
+                        predictive analytics, and health optimization, we are
+                        reshaping the future of medicine
                       </h3>
                     </div>
 
@@ -150,40 +155,38 @@ const About = () => {
                       <div className="z-20 flex justify-center">
                         <div className="max-w-[1100px] w-full">
                           <div className="grid md:grid-cols-2 gap-5 w-full">
+                            {/* Mission */}
                             <div
                               id="mission"
-                              className="bg-[#262626] w-full z-10 rounded-[1rem] py-7 px-5"
+                              className="bg-[#262626] w-full z-10 rounded-[1rem] py-7 px-5 flex flex-col justify-between"
                             >
-                              <div className="flex flex-col ">
-                                <h6 className="text-[#EFEFEF] text-[15px]">
-                                Our mission is to empower individuals to live longer, healthier lives using cutting-edge AI and biotechnology. 
-                                </h6>
-                                <h6 className="text-[#23F7DD] text-end text-[35px]">
-                                  Our Mission
-                                </h6>
-                              </div>
+                              <h6 className="text-[#EFEFEF] md:text-[18px] text-[15px]">
+                                Our mission is to empower individuals to live
+                                longer, healthier lives using cutting-edge AI
+                                and biotechnology.
+                              </h6>
+                              <h6 className="text-[#23F7DD] self-end text-end text-[35px]">
+                                Our Mission
+                              </h6>
                             </div>
 
+                            {/* Vision */}
                             <div
                               id="vision"
-                              className="bg-[#262626] w-full z-10 rounded-[1rem] py-7 px-5"
+                              className="bg-[#262626] w-full z-10 rounded-[1rem] py-7 px-5 flex flex-col justify-between"
                             >
-                              <div className="flex flex-col ">
-                                <h6 className="text-[#EFEFEF] text-[15px]">
-                                We envision a world where aging-related diseases are eradicated, and personalized health solutions are accessible to everyone.
-                                </h6>
-                                <h6 className="text-[#23F7DD] text-end text-[35px]">
-                                  Our Vission
-                                </h6>
-                              </div>
+                              <h6 className="text-[#EFEFEF] md:text-[18px] text-[15px]">
+                                We envision a world where aging-related diseases
+                                are eradicated, and personalized health
+                                solutions are accessible to everyone.
+                              </h6>
+                              <h6 className="text-[#23F7DD] self-end text-end text-[35px]">
+                                Our Vision
+                              </h6>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-
-                    <div className="flex justify-center pb-10">
-                      <div className="max-w-[2000px] md:px-14 px-4 w-full"></div>
                     </div>
                   </div>
                 </div>
@@ -193,13 +196,156 @@ const About = () => {
         </div>
       </div>
 
-      <div id="coreValues">
-        <CoreValues />
-      </div>
-      <FutureProof />
-      <PicturesAlone />
+      <div className="flex justify-center pb-10">
+        <div className="max-w-[2000px] md:px-20 px-4 w-full">
+          <div className="flex justify-center text-center">
+            <h4 className="text-[40px] text-white py-4">Meet the Team</h4>
+          </div>
 
-      <LatestNews />
+          <div className="grid mlg:grid-cols-3 md:grid-cols-2 gap-6">
+          <div className="relative group">
+  <div className="border border-black shadow-2xl rounded-[10px]">
+    <div className="flex border-b pt-4 border-black justify-center">
+      <img src="/images/rteam2.jpg" className="w-[300px] h-[300px]" alt="/" />
+    </div>
+    <div className="px-9 py-3 text-white">
+      <div className="flex justify-between">
+        {/* Tooltip Container */}
+        <div className="relative">
+          <h5 className="text-[20px] font-[600] cursor-pointer">Jonathan Reekurt</h5>
+          {/* Tooltip */}
+          {/* <div className="absolute bottom-full left-[110px] transform -translate-x-1/2 mb-2 w-[300px] bg-black text-white text-sm rounded-md shadow-md p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            Zeta Jonathan is the CEO with over 10 years of experience in leadership and innovation.
+          </div> */}
+        </div>
+        {/* <svg
+          width="8%"
+          height="8%"
+          viewBox="0 0 30 30"
+          fill="white"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M24 4.5C24.7969 4.5 25.5 5.20312 25.5 6.04688V24C25.5 24.8438 24.7969 25.5 24 25.5H5.95312C5.15625 25.5 4.5 24.8438 4.5 24V6.04688C4.5 5.20312 5.15625 4.5 5.95312 4.5H24ZM10.8281 22.5V12.5156H7.73438V22.5H10.8281ZM9.28125 11.1094C10.2656 11.1094 11.0625 10.3125 11.0625 9.32812C11.0625 8.34375 10.2656 7.5 9.28125 7.5C8.25 7.5 7.45312 8.34375 7.45312 9.32812C7.45312 10.3125 8.25 11.1094 9.28125 11.1094ZM22.5 22.5V17.0156C22.5 14.3438 21.8906 12.2344 18.75 12.2344C17.25 12.2344 16.2188 13.0781 15.7969 13.875H15.75V12.5156H12.7969V22.5H15.8906V17.5781C15.8906 16.2656 16.125 15 17.7656 15C19.3594 15 19.3594 16.5 19.3594 17.625V22.5H22.5Z"
+            fill="white"
+          ></path>
+        </svg> */}
+      </div>
+      <h4 className="text-gray-300">Founder & CEO | Software Engineer</h4>
+    </div>
+  </div>
+</div>
+
+<div className="relative group">
+  <div className="border border-black shadow-2xl rounded-[10px]">
+    <div className="flex border-b pt-4 border-black justify-center">
+      <img src="/images/rteam1.jpg" className="w-[300px] h-[300px]" alt="/" />
+    </div>
+    <div className="px-9 py-3 text-white">
+      <div className="flex justify-between">
+        {/* Tooltip Container */}
+        <div className="relative">
+          <h5 className="text-[20px] font-[600] cursor-pointer">Chaitanya Vankireddy</h5>
+          {/* Tooltip */}
+          {/* <div className="absolute bottom-full left-[110px] transform -translate-x-1/2 mb-2 w-[300px] bg-black text-white text-sm rounded-md shadow-md p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            Zeta Jonathan is the CEO with over 10 years of experience in leadership and innovation.
+          </div> */}
+        </div>
+        {/* <svg
+          width="8%"
+          height="8%"
+          viewBox="0 0 30 30"
+          fill="white"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M24 4.5C24.7969 4.5 25.5 5.20312 25.5 6.04688V24C25.5 24.8438 24.7969 25.5 24 25.5H5.95312C5.15625 25.5 4.5 24.8438 4.5 24V6.04688C4.5 5.20312 5.15625 4.5 5.95312 4.5H24ZM10.8281 22.5V12.5156H7.73438V22.5H10.8281ZM9.28125 11.1094C10.2656 11.1094 11.0625 10.3125 11.0625 9.32812C11.0625 8.34375 10.2656 7.5 9.28125 7.5C8.25 7.5 7.45312 8.34375 7.45312 9.32812C7.45312 10.3125 8.25 11.1094 9.28125 11.1094ZM22.5 22.5V17.0156C22.5 14.3438 21.8906 12.2344 18.75 12.2344C17.25 12.2344 16.2188 13.0781 15.7969 13.875H15.75V12.5156H12.7969V22.5H15.8906V17.5781C15.8906 16.2656 16.125 15 17.7656 15C19.3594 15 19.3594 16.5 19.3594 17.625V22.5H22.5Z"
+            fill="white"
+          ></path>
+        </svg> */}
+      </div>
+      <h4 className="text-gray-300">Chief Financial Officer</h4>
+    </div>
+  </div>
+</div>
+
+<div className="relative group">
+  <div className="border border-black shadow-2xl rounded-[10px]">
+    <div className="flex border-b pt-4 border-black justify-center">
+      <img src="/images/rteam3.jpg" className="w-[300px] h-[300px]" alt="/" />
+    </div>
+    <div className="px-9 py-3 text-white">
+      <div className="flex justify-between">
+        {/* Tooltip Container */}
+        <div className="relative">
+          <h5 className="text-[20px] font-[600] cursor-pointer">Karly (Emma) Terlevich</h5>
+          {/* Tooltip */}
+          {/* <div className="absolute bottom-full left-[110px] transform -translate-x-1/2 mb-2 w-[300px] bg-black text-white text-sm rounded-md shadow-md p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            Zeta Jonathan is the CEO with over 10 years of experience in leadership and innovation.
+          </div> */}
+        </div>
+        {/* <svg
+          width="8%"
+          height="8%"
+          viewBox="0 0 30 30"
+          fill="white"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M24 4.5C24.7969 4.5 25.5 5.20312 25.5 6.04688V24C25.5 24.8438 24.7969 25.5 24 25.5H5.95312C5.15625 25.5 4.5 24.8438 4.5 24V6.04688C4.5 5.20312 5.15625 4.5 5.95312 4.5H24ZM10.8281 22.5V12.5156H7.73438V22.5H10.8281ZM9.28125 11.1094C10.2656 11.1094 11.0625 10.3125 11.0625 9.32812C11.0625 8.34375 10.2656 7.5 9.28125 7.5C8.25 7.5 7.45312 8.34375 7.45312 9.32812C7.45312 10.3125 8.25 11.1094 9.28125 11.1094ZM22.5 22.5V17.0156C22.5 14.3438 21.8906 12.2344 18.75 12.2344C17.25 12.2344 16.2188 13.0781 15.7969 13.875H15.75V12.5156H12.7969V22.5H15.8906V17.5781C15.8906 16.2656 16.125 15 17.7656 15C19.3594 15 19.3594 16.5 19.3594 17.625V22.5H22.5Z"
+            fill="white"
+          ></path>
+        </svg> */}
+      </div>
+      <h4 className="text-gray-300">Head of Research</h4>
+    </div>
+  </div>
+</div>
+
+<div className="relative group">
+  <div className="border border-black shadow-2xl rounded-[10px]">
+    <div className="flex border-b pt-4 border-black justify-center">
+      <img src="/images/rteam4.jpg" className="w-[300px] h-[300px]" alt="/" />
+    </div>
+    <div className="px-9 py-3 text-white">
+      <div className="flex justify-between">
+        {/* Tooltip Container */}
+        <div className="relative">
+          <h5 className="text-[20px] font-[600] cursor-pointer">Omeiza Alabi</h5>
+          {/* Tooltip */}
+          {/* <div className="absolute bottom-full left-[110px] transform -translate-x-1/2 mb-2 w-[300px] bg-black text-white text-sm rounded-md shadow-md p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            Zeta Jonathan is the CEO with over 10 years of experience in leadership and innovation.
+          </div> */}
+        </div>
+        {/* <svg
+          width="8%"
+          height="8%"
+          viewBox="0 0 30 30"
+          fill="white"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M24 4.5C24.7969 4.5 25.5 5.20312 25.5 6.04688V24C25.5 24.8438 24.7969 25.5 24 25.5H5.95312C5.15625 25.5 4.5 24.8438 4.5 24V6.04688C4.5 5.20312 5.15625 4.5 5.95312 4.5H24ZM10.8281 22.5V12.5156H7.73438V22.5H10.8281ZM9.28125 11.1094C10.2656 11.1094 11.0625 10.3125 11.0625 9.32812C11.0625 8.34375 10.2656 7.5 9.28125 7.5C8.25 7.5 7.45312 8.34375 7.45312 9.32812C7.45312 10.3125 8.25 11.1094 9.28125 11.1094ZM22.5 22.5V17.0156C22.5 14.3438 21.8906 12.2344 18.75 12.2344C17.25 12.2344 16.2188 13.0781 15.7969 13.875H15.75V12.5156H12.7969V22.5H15.8906V17.5781C15.8906 16.2656 16.125 15 17.7656 15C19.3594 15 19.3594 16.5 19.3594 17.625V22.5H22.5Z"
+            fill="white"
+          ></path>
+        </svg> */}
+      </div>
+      <h4 className="text-gray-300">Chief Technology Officer</h4>
+    </div>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      {/* <div id="coreValues">
+        <CoreValues />
+      </div> */}
+      <FutureProof />
+      {/* <PicturesAlone /> */}
+
+      {/* <LatestNews /> */}
 
       <Footer />
     </div>

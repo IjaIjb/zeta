@@ -2,12 +2,12 @@ import React from "react";
 
 const FutureProof = () => {
   return (
-    <div className="p-1 mt-10">
+    <div className="p-1 overflow-hidden mt-10">
       <div className="bg-[#080808] rounded-[20px]">
         <div className="flex justify-center">
           <div className="relative">
             {/* Rotating Planet and Orbits */}
-            <div className="relative lg:w-[800px] lg:h-[800px] w-[250px] h-[250px] md:w-[600px] md:h-[600px] flex items-center justify-center">
+            <div className="relative lg:w-[800px] lg:h-[800px] w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] flex items-center justify-center">
               {/* Inner Orbit */}
               <div className="absolute w-full h-full animate-spin-slow">
                 <img
@@ -30,25 +30,25 @@ const FutureProof = () => {
               <img
                 src="https://cdn.multiversx.com/webflow/Planet.webp"
                 alt="Planet"
-                className="lg:w-[600px] md:w-[400px] w-[150px] h-[150px] md:h-[400px] lg:h-[600px] z-10 opacity-80 animate-spin-slow"
+                className="lg:w-[600px] sm:w-[300px] w-[150px] h-[150px] sm:h-[300px] lg:h-[600px] z-[1] opacity-80 animate-spin-slow"
               />
 
               {/* Gradient Layers */}
-              <div className="absolute lg:w-[800px] md:w-[600px] md:h-[600px] w-[250px] h-[250px] lg:h-[800px] rounded-full bg-gradient-to-r from-[#4ADE80] to-[#4ADE80] opacity-50 blur-xl"></div>
-              <div className="absolute lg:w-[800px] md:w-[600px] md:h-[600px] w-[250px] h-[250px] lg:h-[800px] rounded-full bg-gradient-to-r from-[#4ADE80] to-[#4ADE80] opacity-30 blur-2xl"></div>
+              <div className="absolute lg:w-[800px] sm:w-[400px] sm:h-[400px] w-[250px] h-[250px] lg:h-[800px] rounded-full bg-gradient-to-r from-[#4ADE80] to-[#4ADE80] opacity-50 blur-xl"></div>
+              <div className="absolute lg:w-[800px] sm:w-[400px] sm:h-[400px] w-[250px] h-[250px] lg:h-[800px] rounded-full bg-gradient-to-r from-[#4ADE80] to-[#4ADE80] opacity-30 blur-2xl"></div>
             </div>
 
             {/* Stationary Content */}
-            <div className="absolute z-20 inset-0 flex flex-col items-center justify-center text-center">
-              <h4 className="text-white md:text-[75px] text-[40px] leading-[45px] md:leading-[75px] max-w-[450px] mb-4">
-                Future-Proof in Every Way
+            <div className="absolute z-[5] inset-0 flex flex-col items-center justify-center text-center">
+              <h4 className="text-white lg:text-[60px] md:text-[40px] text-[30px] leading-[45px] md:leading-[75px] lg:max-w-[600px] mb-4">
+              Beyond Time, Beyond Limits—Zetakree
               </h4>
               <p className="text-white text-[16px] md:text-[20px] max-w-[590px] mbb-4 md:mb-8">
-                MultiversX is leading the way towards a more responsible and
-                sustainable infrastructure for all digital things.
+              At Zetakree, we transform lives through AI-powered insights, decoding the blueprint of health, and innovating a future free from aging diseases.
+
               </p>
               <div className="flex items-center gap-2 bg-[#4ADE80] rounded-[12px] py-3 px-3 md:px-6 text-black font-medium cursor-pointer">
-                Learn about Sustainability
+              Learn more on longevity
                 <svg
                   className="w-5 h-5"
                   viewBox="0 0 25 16"

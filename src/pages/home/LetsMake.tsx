@@ -16,6 +16,215 @@ const LetsMake = () => {
           Our groundbreaking AI software utilizes patient data and critical biomarkers to predict life expectancy, offering personalized guidance to extend lifespan. At Zetakree, we help you not only live longer but live better
           </h4>
           </div>
+          {/* <div className="grid lg:grid-cols-12 gap-4 items-center ">
+        <div className="col-span-6">
+          <img
+            src="/images/istockphoto-2164305448-612x612.webp"
+            alt="Logos of Ecosystem projects"
+            loading="lazy"
+            className="featured_img"
+          ></img>
+        </div>
+
+        <div className="col-span-6 px-6">
+          <div className="flex flex-col gap-4">
+            <h4 className="text-white text-[29px] lg:max-w-[400px] font-semibold">
+            AI-Powered Health Insights
+
+            </h4>
+            <h4 className="text-[#737373] text-[19px] lg:max-w-[415px]">
+            Delivering personalized health predictions using advanced AI.
+            </h4>
+         
+          </div>
+        </div>
+      </div>
+
+
+      <div className="grid lg:grid-cols-12 pt-6 gap-4 items-center ">
+    
+    <div className="col-span-6 px-6">
+      <div className="flex flex-col gap-4">
+        <h4 className="text-white text-[29px] lg:max-w-[400px] font-semibold">
+        Telomere Preservation Technologies
+
+        </h4>
+        <h4 className="text-[#737373] text-[19px] lg:max-w-[415px]">
+        Innovative solutions for combating cellular aging processes.
+        </h4>
+     
+      </div>
+    </div>
+
+    <div className="col-span-6">
+      <img
+        src="/images/istockphoto-958204540-612x612.webp"
+        alt="Logos of Ecosystem projects"
+        loading="lazy"
+        className="featured_img"
+      ></img>
+    </div>
+  </div>
+
+  <div className="grid lg:grid-cols-12 gap-4 pt-6 items-center ">
+        <div className="col-span-6">
+          <img
+            src="/images/istockphoto-1003115696-612x612.jpg"
+            alt="Logos of Ecosystem projects"
+            loading="lazy"
+            className="featured_img"
+          ></img>
+        </div>
+
+        <div className="col-span-6 px-6">
+          <div className="flex flex-col gap-4">
+            <h4 className="text-white text-[29px] lg:max-w-[400px] font-semibold">
+            Facial Aging Clock
+            </h4>
+            <h4 className="text-[#737373] text-[19px] lg:max-w-[415px]">
+            Estimating biological age with AI-analyzed facial features.
+            </h4>
+         
+          </div>
+        </div>
+      </div>
+
+      <div className="grid lg:grid-cols-12 pt-6 gap-4 items-center ">
+    
+    <div className="col-span-6 px-6">
+      <div className="flex flex-col gap-4">
+        <h4 className="text-white text-[29px] lg:max-w-[400px] font-semibold">
+        Lifestyle-Based Aging Clock
+        </h4>
+        <h4 className="text-[#737373] text-[19px] lg:max-w-[415px]">
+        Creating longevity plans using lifestyle and health history data.
+        </h4>
+     
+      </div>
+    </div>
+
+    <div className="col-span-6">
+      <img
+        src="/images/istockphoto-1684732660-612x612.webp"
+        alt="Logos of Ecosystem projects"
+        loading="lazy"
+        className="featured_img"
+      ></img>
+    </div>
+  </div>
+
+  <div className="grid lg:grid-cols-12 pt-6 gap-4 items-center ">
+        <div className="col-span-6">
+          <img
+            src="/images/istockphoto-1212662113-612x612.webp"
+            alt="Logos of Ecosystem projects"
+            loading="lazy"
+            className="featured_img"
+          ></img>
+        </div>
+
+        <div className="col-span-6 px-6">
+          <div className="flex flex-col gap-4">
+            <h4 className="text-white text-[29px] lg:max-w-[400px] font-semibold">
+            Real-Time Health Tracking Platforms
+            </h4>
+            <h4 className="text-[#737373] text-[19px] lg:max-w-[415px]">
+            Monitoring vitals and wellness continuously via technology.
+            </h4>
+         
+          </div>
+        </div>
+      </div>
+
+
+      <div className="grid lg:grid-cols-12 pt-6 gap-4 items-center ">
+    
+    <div className="col-span-6 px-6">
+      <div className="flex flex-col gap-4">
+        <h4 className="text-white text-[29px] lg:max-w-[400px] font-semibold">
+        AI-Driven Chronic Condition Monitoring
+        </h4>
+        <h4 className="text-[#737373] text-[19px] lg:max-w-[415px]">
+        Managing chronic conditions with intelligent AI tools.
+
+        </h4>
+     
+      </div>
+    </div>
+
+    <div className="col-span-6">
+      <img
+        src="/images/istockphoto-1415099907-612x612.webp"
+        alt="Logos of Ecosystem projects"
+        loading="lazy"
+        className="featured_img"
+      ></img>
+    </div>
+  </div>
+
+
+  <div className="grid lg:grid-cols-12 gap-4 pt-6 items-center ">
+        <div className="col-span-6">
+          <img
+            src="/images/istockphoto-1495647694-612x612.webp"
+            alt="Logos of Ecosystem projects"
+            loading="lazy"
+            className="featured_img"
+          ></img>
+        </div>
+
+        <div className="col-span-6 px-6">
+          <div className="flex flex-col gap-4">
+            <h4 className="text-white text-[29px] lg:max-w-[400px] font-semibold">
+            Disease Risk Prediction Algorithms
+            </h4>
+            <h4 className="text-[#737373] text-[19px] lg:max-w-[415px]">
+            Identifying and addressing health risks early through AI.
+
+            </h4>
+         
+          </div>
+        </div>
+      </div>
+
+      <div className="grid lg:grid-cols-12 pt-6 gap-4 items-center ">
+    
+    <div className="col-span-6 px-6">
+      <div className="flex flex-col gap-4">
+        <h4 className="text-white text-[29px] lg:max-w-[400px] font-semibold">
+        Digital Health Data Integration
+        </h4>
+        <h4 className="text-[#737373] text-[19px] lg:max-w-[415px]">
+        Aggregating health data into actionable insights seamlessly.
+        </h4>
+     
+      </div>
+    </div>
+
+    <div className="col-span-6">
+      <img
+        src="/images/istockphoto-2157709151-612x612.webp"
+        alt="Logos of Ecosystem projects"
+        loading="lazy"
+        className="featured_img"
+      ></img>
+    </div>
+  </div>
+
+
+
+
+
+ */}
+
+
+
+
+
+
+
+
+
           <div className="grid grid-cols-12 gap-5">
             <div className="lg:col-span-3 md:col-span-6 col-span-12">
               <div className="bg-[#171717] h-[350px] pb-5 overflow-hidden rounded-[40px] flex flex-col justify-between">
@@ -23,12 +232,13 @@ const LetsMake = () => {
                   <img
                     src="https://cdn.multiversx.com/webflow/esdt-visual.webp"
                     alt=""
-                    className="bento-home_image-top w-[260px] h-[260px] -mt-10"
+                    className="bento-home_image-top w-[260px] h-[260px] -mt-[120px]"
                   />
                 </div>
                 <div className="flex justify-center">
-                  <h4 className="text-white text-center max-w-[100px] text-[1.5rem] font-[500] mb-4">
-                    Native Assets
+                  <h4 className="text-white text-center max-w-[300px] text-[1.5rem] font-[500] mb-4">
+                  AI-Powered Health Insights - Delivering personalized health predictions using advanced AI.
+
                   </h4>
                 </div>
               </div>
@@ -37,8 +247,9 @@ const LetsMake = () => {
             <div className="lg:col-span-3 md:col-span-6 col-span-12">
               <div className="bg-[#171717] h-[350px] pb-5 overflow-hidden rounded-[40px] flex flex-col justify-between">
                 <div className="flex justify-center">
-                  <h4 className="text-white text-center max-w-[200px] text-[1.5rem] font-[500] mt-4">
-                    Safest User Experience
+                  <h4 className="text-white text-center max-w-[600px] text-[1.5rem] font-[500] mt-4">
+                  Predictive Analytics for Longevity - Forecasting lifespan based on biomarkers and health data.
+
                   </h4>
                 </div>
                 <div className="flex justify-center">
@@ -62,13 +273,11 @@ const LetsMake = () => {
                 </div>
 
                 <div className="md:flex justify-between px-10">
-                  <h4 className="text-white  max-w-[200px] text-[36px] font-[500] mt-4">
-                    30% Developer Royalties
+                  <h4 className="text-white  max-w-[600px] text-[1.5rem] font-[500] mt-4">
+                  Telomere Preservation Technologies - Innovative solutions for combating cellular aging processes.
+
                   </h4>
-                  <h4 className="text-[#a3a3a3] md:place-self-end max-w-[200px] text-[14px] font-[500] mt-4">
-                    Developers get 30% of the gas fee every time someone calls
-                    their smart contract
-                  </h4>
+                
                 </div>
               </div>
             </div>
@@ -84,16 +293,16 @@ const LetsMake = () => {
                     className="bento-home_image-top w-[300px] h-[350px] -mt-[90px] -mr-[180px]"
                   />
                 </div>
-                <div className="flex justify-center -mt-[100px] pb-[20px]">
+                <div className="flex justify-center -mt-[150px] pb-[20px]">
                   <div>
                     <div>
-                      <h4 className="text-white max-w-[150px] text-[1.5rem] font-[500] mb-4">
-                        Adaptive State Sharing
+                      <h4 className="text-white max-w-[200px] text-[1.5rem] font-[500] mb-4">
+                      Blood Test-Based Aging Clock 
                       </h4>
                     </div>
                     <h4 className="text-[#a3a3a3]  max-w-[153px] text-[14px] font-[500] mt-4">
-                      The first to present a viable solution where all three
-                      aspects of sharding are live
+                    Determining biological age through blood biomarker analysis.
+
                     </h4>
                   </div>
                 </div>
@@ -113,12 +322,12 @@ const LetsMake = () => {
                   <div>
                     <div>
                       <h4 className="text-white text-right max-w-[150px] text-[1.5rem] font-[500] mb-4">
-                        Secure Proof of Stake
+                      Facial Aging Clock
                       </h4>
                     </div>
                     <h4 className="text-[#a3a3a3] text-right  max-w-[153px] text-[14px] font-[500] mt-4">
-                      Energy-efficient consensus mechanism with provable
-                      security guarantees
+                    Estimating biological age with AI-analyzed facial features.
+
                     </h4>
                   </div>
                 </div>
@@ -126,7 +335,7 @@ const LetsMake = () => {
             </div>
 
             <div className="lg:col-span-3 md:col-span-4 col-span-12">
-              <div className="reltaive">
+              <div className="reltaive z-[1] overflow-hidden">
                 <div
                   className="bg-[#171717] h-[350px] pb-5 overflow-hidden relative rounded-[40px] flex flex-col justify-end bg-no-repeat bg-cover bg-center"
                   //   style={{ backgroundImage: "url('https://cdn.multiversx.com/webflow/wasm.webp')" }}
@@ -150,7 +359,7 @@ const LetsMake = () => {
                         className="absolute w-full h-full object-cover"
                       />
                     </div>
-                    {/* Gradient overlay */}
+           
                     <div
                       className="absolute inset-0 bg-[#0a0a0a]/[20%] "
                       style={{
@@ -162,14 +371,14 @@ const LetsMake = () => {
                   </div>
                   <div className=" px-4 py-4 rounded-b-[40px]">
                     <div className="flex justify-center">
-                      <h4 className="text-white z-50 text-center max-w-[200px] text-[1.5rem] font-[500] mb-2">
-                        WASM-Based Virtual Machine
+                      <h4 className="text-white z-[1]  text-center max-w-[200px] text-[1.5rem] font-[500] mb-2">
+                      Lifestyle-Based Aging Clock
                       </h4>
                     </div>
                     <div className="flex justify-center">
-                      <h4 className="text-[#a3a3a3] z-50 text-center max-w-[145px] text-[14px] font-[500]">
-                        Write smart contracts in familiar languages, compile,
-                        and run them through the fastest VM in the space
+                      <h4 className="text-[#a3a3a3] z-[1] text-center max-w-[145px] text-[14px] font-[500]">
+                      Creating longevity plans using lifestyle and health history data.
+
                       </h4>
                     </div>
                   </div>
@@ -187,19 +396,19 @@ const LetsMake = () => {
                       className="absolute w-full h-full object-cover"
                     />
                   </div>
-                  <div className="-mt-10">
-                    <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
+                  <div className="-mt-10 ">
+                    <div className=" flex flex-col items-center justify-center text-center px-4">
                       <div className="relative inline-block px-3 rounded-full text-white">
-                        <div className="bg-gradient-to-r from-[rgba(0,186,86,0.6)] via-[rgba(0,150,171,0.6)] to-[rgba(201,88,169,0.6)] p-[2px] rounded-full">
+                        {/* <div className="bg-gradient-to-r from-[rgba(0,186,86,0.6)] via-[rgba(0,150,171,0.6)] to-[rgba(201,88,169,0.6)] p-[2px] rounded-full">
                           <div className="bg-[#171717] rounded-full px-4 py-1">
                             Live
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
-                    <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
+                    <div className="relative  flex flex-col items-center justify-center text-center px-4">
                       <h4 className="text-white text-[51px] font-[500] mb-2">
-                        Sovereign Chains
+                     AI-Driven Chronic Condition Monitoring
                       </h4>
                     </div>
                   </div>
@@ -209,8 +418,8 @@ const LetsMake = () => {
             <div className="lg:col-span-3 lg:block hidden md:col-span-6 col-span-12">
               <div className="bg-[#171717] h-[350px] pb-5 overflow-hidden rounded-[40px] flex flex-col justify-between">
                 <div className="flex justify-start px-8 pt-7">
-                  <h4 className="text-white  max-w-[130px] text-[1.5rem] font-[500] mt-4">
-                    Resilient and Battle-Tested
+                  <h4 className="text-white  max-w-[180px] text-[1.5rem] font-[500] mt-4">
+                  Real-Time Health Tracking Platforms
                   </h4>
                 </div>
                 <div className="flex justify-end">
@@ -230,12 +439,13 @@ const LetsMake = () => {
                 <div>
                   <div className="flex justify-center">
                     <h4 className="text-white text-center max-w-[200px] text-[1.5rem] font-[500] mt-4">
-                      Fast
+                    Disease Risk Prediction Algorithms
                     </h4>
                   </div>
                   <div className="flex justify-center">
                     <h4 className="text-[#a3a3a3] text-center  max-w-[200px] text-[14px] font-[500] mt-4">
-                      263,000 transactions per second max recorded
+                    Identifying and addressing health risks early through AI.
+
                     </h4>
                   </div>
                 </div>
@@ -261,18 +471,18 @@ const LetsMake = () => {
                     />
                   </div>
                   <div className="-mt-10">
-                    <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
+                    <div className="relative  flex flex-col items-center justify-center text-center px-4">
                       <div className="relative inline-block px-3 rounded-full text-white">
-                        <div className="bg-gradient-to-r from-[rgba(0,186,86,0.6)] via-[rgba(0,150,171,0.6)] to-[rgba(201,88,169,0.6)] p-[2px] rounded-full">
+                        {/* <div className="bg-gradient-to-r from-[rgba(0,186,86,0.6)] via-[rgba(0,150,171,0.6)] to-[rgba(201,88,169,0.6)] p-[2px] rounded-full">
                           <div className="bg-[#171717] rounded-full px-4 py-1">
                             Live
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
-                    <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
+                    <div className="relative flex flex-col items-center justify-center text-center px-4">
                       <h4 className="text-white text-[51px] font-[500] mb-2">
-                        Sovereign Chains
+                     AI-Driven Chronic Condition Monitoring
                       </h4>
                     </div>
                   </div>
@@ -283,7 +493,7 @@ const LetsMake = () => {
               <div className="bg-[#171717] h-[350px] pb-5 overflow-hidden rounded-[40px] flex flex-col justify-between">
                 <div className="flex justify-start px-8 pt-7">
                   <h4 className="text-white  max-w-[130px] text-[1.5rem] font-[500] mt-4">
-                    Resilient and Battle-Tested
+                  Digital Health Data Integration
                   </h4>
                 </div>
                 <div className="flex justify-end">
@@ -308,12 +518,12 @@ const LetsMake = () => {
                 <div>
                   <div className="flex justify-center">
                     <h4 className="text-white text-center text-[1.5rem] font-[500] mb-4">
-                      Decentralized
+                    Digital Health Data Integration
                     </h4>
                   </div>
                   <div className="flex justify-center">
                     <h4 className="text-[#a3a3a3] text-center text-[14px] font-[500] ">
-                      3,200+ validator nodes
+                    Aggregating health data into actionable insights seamlessly.
                     </h4>
                   </div>
                 </div>

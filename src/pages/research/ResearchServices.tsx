@@ -30,7 +30,7 @@ const ResearchServices = () => {
             <h4 className="text-[#737373] text-[19px] lg:max-w-[415px]">
             Our AI software analyzes key biomarkers to predict your life expectancy, enabling early interventions for a longer, healthier life.
             </h4>
-            <div className="flex whitespace-nowrap gap-4 z-10 mt-3 w-fit lg:mt-0 py-3 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]">
+            <div className="flex whitespace-nowrap gap-4 z-[1] mt-3 w-fit lg:mt-0 py-3 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]">
             Explore Our Innovations
               <svg
                 className="w-5 h-5"
@@ -60,7 +60,7 @@ const ResearchServices = () => {
             <h4 className="text-[#737373] text-[19px] lg:max-w-[415px]">
             Tailored lifestyle and wellness plans designed to enhance longevity, based on AI-driven insights and biomarker analysis.
             </h4>
-            <div className="flex whitespace-nowrap gap-4 z-10 mt-3 w-fit lg:mt-0 py-3 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]">
+            <div className="flex whitespace-nowrap gap-4 z-[1] mt-3 w-fit lg:mt-0 py-3 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]">
             Explore Our Innovations
               <svg
                 className="w-5 h-5"
@@ -109,7 +109,7 @@ src="https://cdn.multiversx.com/webflow/egld-stake.webp"
             <h4 className="text-[#737373] text-[19px] lg:max-w-[415px]">
             Seamlessly integrate wearable data, digital health records, and lab results for actionable insights and predictive diagnostics.
             </h4>
-            <div className="flex whitespace-nowrap gap-4 z-10 mt-3 w-fit lg:mt-0 py-3 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]">
+            <div className="flex whitespace-nowrap gap-4 z-[1] mt-3 w-fit lg:mt-0 py-3 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]">
             Explore Our Innovations
               <svg
                 className="w-5 h-5"

@@ -21,7 +21,7 @@ const ExploreEco = () => {
             <h4 className="text-[#737373] text-[19px] lg:max-w-[315px]">
             Learn more about how our technologies and research are transforming the future of health and longevity
             </h4>
-            <div className="flex whitespace-nowrap gap-4 z-10 mt-3 w-fit lg:mt-0 py-3 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]">
+            <div className="flex whitespace-nowrap gap-4 z-[1] mt-3 w-fit lg:mt-0 py-3 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]">
             Explore Our Innovations
               <svg
                 className="w-5 h-5"

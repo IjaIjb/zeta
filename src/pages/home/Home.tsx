@@ -1,9 +1,8 @@
 import React from "react";
-import { RiArrowRightUpLine } from "react-icons/ri";
+// import { RiArrowRightUpLine } from "react-icons/ri";
 import LetsMake from "./LetsMake";
 import Footer from "../../component/Footer";
 import Navbar from "../../component/Navbar";
-import FeaturedPartners from "./FeaturedPartners";
 import Secure from "./Secure";
 import FutureProof from "./FutureProof";
 import ExploreEco from "./ExploreEco";
@@ -32,19 +31,20 @@ const Home = () => {
           <div className=" overflow-hidden z-10 bg-black  rounded-[50px]  w-full">
             {/* <div className="bg-gradient-to-b from-[#0a0a0a00] via-[#0a0a0a] via-61% from-20% w-full rounded-[15px]  pt-[6px]"> */}
             <div className="flex justify-center">
-              <div className="max-w-[2000px] mx-auto lg:px-14 px-3 w-full">
-                <Navbar />
-
+              <div className="max-w-[2000px] mx-auto z-50 lg:px-14 px-3 w-full">
+              <div className=" flex justify-center">
+                    <Navbar />
+                  </div>
                 <div className="">
                   <div className="flex justify-center mt-[200px]">
-                    <div className="bg-[#0A201D] flex gap-2 hover:gap-4 cursor-pointer items-center p-2 rounded-full">
+                    {/* <div className="bg-[#0A201D] flex gap-2 hover:gap-4 cursor-pointer items-center p-2 rounded-full">
                       <div className="bg-[#23F7DD] text-[8px] px-1 rounded-full">
                         New
                       </div>
                       <h5 className="text-[#F5F5F5] text-[12px]">
                         Spica 1.8 Live on Mainnet
                       </h5>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="flex justify-center ">
                     <h3 className="text-[#f5f5f5] text-center leading-[45px] lg:leading-[60px]  z-10 text-[40px] lg:text-[4rem] ">
@@ -147,20 +147,20 @@ const Home = () => {
                             <div className="bg-[#262626] h-full lg:h-fit z-10 rounded-[1rem] py-7 px-5">
                               <div className="flex items-center justify-between">
                                 <h6 className="text-[#737373] text-[15px]">
-                                  Average Cost per <br /> Transaction
+                                Current Research Projects
                                 </h6>
                                 <h6 className="text-[#23F7DD] text-[35px]">
-                                  ~$0<span className="opacity-60">.002</span>
+                                  10<span className="opacity-60">+</span>
                                 </h6>
                               </div>
                             </div>
                             <div className="bg-[#262626] lg:block hidden z-10 rounded-[1rem] py-7 px-5">
                               <div className="flex flex-col ">
                                 <h6 className="text-[#737373] text-[15px]">
-                                  Total Transaction
+                                Active Collaboration Partners
                                 </h6>
                                 <h6 className="text-[#23F7DD] text-end text-[35px]">
-                                  467,080,937
+                                4+
                                 </h6>
                               </div>
                             </div>
@@ -168,17 +168,17 @@ const Home = () => {
                           <div className="bg-[#262626]  md:col-span-6 col-span-12 lg:hidden block z-10 rounded-[1rem] py-7 px-5">
                             <div className="flex flex-col ">
                               <h6 className="text-[#737373] text-[15px]">
-                                Total Transaction
+                              Active Collaboration Partners
                               </h6>
                               <h6 className="text-[#23F7DD] text-end text-[35px]">
-                                467,080,937
+                               4+
                               </h6>
                             </div>
                           </div>
                           <div className="lg:col-span-4 md:col-span-6  col-span-12 lg:place-self-end w-full">
                             <div className="z-20 relative ">
                               <div
-                                className="bg-[#262626] w-full z-20 rounded-[1rem] pb-7 pt-[100px] px-5 bg-cover bg-center"
+                                className="bg-[#262626] w-full relative z-20 rounded-[1rem] pb-7 pt-[100px] px-5 bg-cover bg-center"
                                 style={{
                                   backgroundImage:
                                     "url('https://cdn.multiversx.com/webflow/validator-map.webp')",
@@ -186,10 +186,10 @@ const Home = () => {
                                 }}
                               >
                                 <h6 className="text-[#737373] text-[15px]">
-                                  Validator Nodes
+                                Lives Improved Globally
                                 </h6>
                                 <h6 className="text-[#23F7DD] text-end text-[35px]">
-                                  467,080,937
+                               100+
                                 </h6>
                               </div>
                             </div>
@@ -210,18 +210,18 @@ const Home = () => {
                               ></div>
                               <div className="relative z-10">
                                 <h6 className="text-[#737373] text-[15px]">
-                                  Efficient Scalable Global
+                                AI-Driven Models/Biotech Solutions Deployed
                                 </h6>
                               </div>
 
                               <div className="mt-auto relative z-10">
                                 <h3 className="text-[#4ADE80] max-w-[200px] leading-[40px] text-[35px]">
-                                  Carbon Neutral
+                               10+
                                 </h3>
-                                <div className="bg-[#4ADE80] w-fit flex items-center gap-1 px-2 py-2 rounded-[8px]">
+                                {/* <div className="bg-[#4ADE80] w-fit flex items-center gap-1 px-2 py-2 rounded-[8px]">
                                   Sustainability
                                   <RiArrowRightUpLine />
-                                </div>
+                                </div> */}
                               </div>
                             </div>
                           </div>
@@ -338,12 +338,12 @@ const Home = () => {
         </div>
       </div>
       <LetsMake />
-      <FeaturedPartners />
+      {/* <FeaturedPartners /> */}
       <Secure />
       <FutureProof />
       <ExploreEco />
       <PicturesAlone />
-      <LatestNews />
+      {/* <LatestNews /> */}
       <Footer />
     </div>
   );

@@ -10,16 +10,16 @@ const FocusArea = () => {
 
             <div className="flex justify-center mt-8">
               <h4 className="text-white text-[45px] leading-[60px] md:text-[70px] font-semibold text-center max-w-[800px]">
-                Engage the developer community
+              AI-Powered Health Platform
               </h4>
             </div>
 
-            <div className="flex justify-center mt-2">
+            {/* <div className="flex justify-center mt-2">
               <h4 className="text-[#737373] text-[18px]   text-center max-w-[600px]">
                 Discover the places where the community gathers and the live
                 community sessions happening.
               </h4>
-            </div>
+            </div> */}
             <div className="flex justify-between items-center mb-5">
               <div className="">
                 <h4 className="text-[25px] text-white font">Key Focus Areas</h4>
@@ -75,7 +75,7 @@ const FocusArea = () => {
               <div className="bg-[#171717] rounded-[13px] flex flex-col text-center justify-center items-center px-5 py-10">
               <div className="bg-gradient-to-r from-[rgba(0,186,86,0.6)] via-[rgba(0,150,171,0.6)] to-[rgba(201,88,169,0.6)] p-[2px] rounded-full">
                           <div className="bg-[#171717] text-white text-[12px] rounded-full px-4 py-0">
-                          Ongoing
+                     Live
                           </div>
                         </div>
                 <h6 className="text-[#E5E5E5] pt-2">AI-based models for predicting life expectancy and identifying disease risks.

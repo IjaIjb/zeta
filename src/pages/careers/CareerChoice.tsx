@@ -15,7 +15,7 @@ const CareerChoice = () => {
             <div className="bg-[#171717] rounded-[13px] flex justify-between items-center py-4 px-5">
               <h5 className="text-white text-[20px]">Backend Developer</h5>
 
-              <div className="flex z-10 gap-2 justify-center py-1 text-white bg-[#262626] items-center text-[16px] px-3 rounded-[12px]">
+              <div className="flex z-[1] gap-2 justify-center py-1 text-white bg-[#262626] items-center text-[16px] px-3 rounded-[12px]">
                 View Role
                 <svg
                   width="10"
@@ -43,7 +43,7 @@ const CareerChoice = () => {
             <div className="bg-[#171717] rounded-[13px] flex justify-between items-center py-4 px-5">
               <h5 className="text-white text-[20px]">Backend Developer</h5>
 
-              <div className="flex z-10 gap-2 justify-center py-1 text-white bg-[#262626] items-center text-[16px] px-3 rounded-[12px]">
+              <div className="flex z-[1] gap-2 justify-center py-1 text-white bg-[#262626] items-center text-[16px] px-3 rounded-[12px]">
                 View Role
                 <svg
                   width="10"
@@ -63,7 +63,7 @@ const CareerChoice = () => {
             <div className="bg-[#171717] mt-1 rounded-[13px] flex justify-between items-center py-4 px-5">
               <h5 className="text-white text-[20px]">DevRel</h5>
 
-              <div className="flex z-10 gap-2 justify-center py-1 text-white bg-[#262626] items-center text-[16px] px-3 rounded-[12px]">
+              <div className="flex z-[1] gap-2 justify-center py-1 text-white bg-[#262626] items-center text-[16px] px-3 rounded-[12px]">
                 View Role
                 <svg
                   width="10"
@@ -83,7 +83,7 @@ const CareerChoice = () => {
             <div className="bg-[#171717] mt-1 rounded-[13px] flex justify-between items-center py-4 px-5">
               <h5 className="text-white text-[20px]">DevRel Marketing</h5>
 
-              <div className="flex z-10 gap-2 justify-center py-1 text-white bg-[#262626] items-center text-[16px] px-3 rounded-[12px]">
+              <div className="flex z-[1] gap-2 justify-center py-1 text-white bg-[#262626] items-center text-[16px] px-3 rounded-[12px]">
                 View Role
                 <svg
                   width="10"
@@ -103,7 +103,7 @@ const CareerChoice = () => {
             <div className="bg-[#171717] mt-1 rounded-[13px] flex justify-between items-center py-4 px-5">
               <h5 className="text-white text-[20px]">QA Engineer</h5>
 
-              <div className="flex z-10 gap-2 justify-center py-1 text-white bg-[#262626] items-center text-[16px] px-3 rounded-[12px]">
+              <div className="flex z-[1] gap-2 justify-center py-1 text-white bg-[#262626] items-center text-[16px] px-3 rounded-[12px]">
                 View Role
                 <svg
                   width="10"

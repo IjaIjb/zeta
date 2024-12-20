@@ -25,11 +25,11 @@ const Secure = () => {
           </div>
 
           <div className="flex mt-5 mb-10 text-center justify-center">
-            <div className="lg:flex justify-center z-10 gap-4">
-              <div className="flex whitespace-nowrap gap-4 z-10 mt-3 w-fit lg:mt-0 py-3 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]">
+            <div className="lg:flex justify-center gap-4">
+              <div className="flex whitespace-nowrap gap-4 mt-3 w-fit lg:mt-0 py-3 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]">
                 Stake EGLD
                 <svg
-                  className="w-5 h-5"
+                  className="w-5 h-5 z-10"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -40,10 +40,10 @@ const Secure = () => {
                   ></path>
                 </svg>
               </div>
-              <div className="flex md:mt-0 mt-5 whitespace-nowrap z-10 gap-4 justify-center py-3 text-white bg-[#171717] items-center text-[16px] px-3  rounded-[12px]">
+              <div className="flex md:mt-0 mt-5 whitespace-nowrap  gap-4 justify-center py-3 text-white bg-[#171717] items-center text-[16px] px-3  rounded-[12px]">
                 What is EGLD?
                 <svg
-                  className="w-5 h-5"
+                  className="w-5 h-5 z-10"
                   viewBox="0 0 25 16"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"

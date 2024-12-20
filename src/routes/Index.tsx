@@ -7,6 +7,7 @@ const ServicePage = lazy(() => import("../pages/services/Services"));
 const CareersPage = lazy(() => import("../pages/careers/Careers"));
 const CollaboratorsPage = lazy(() => import("../pages/collaborators/Collaborators"));
 const ContactusPage = lazy(() => import("../pages/contact/Contact"));
+const MarketPlacePage = lazy(() => import("../pages/marketplace/MarketPlace"));
 
 const routes = [
     {
@@ -40,6 +41,10 @@ const routes = [
     {
       path: "/contact-us",
       component: ContactusPage,
+    },
+    {
+      path: "/market-place",
+      component: MarketPlacePage,
     },
   
   

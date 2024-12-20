@@ -220,9 +220,9 @@ const PicturesAlone = () => {
       <div className="flex justify-center">
         <div className="max-w-[2000px] h-full md:px-14 px-4 w-full ">
           <h4 className="text-white text-[40px] md:text-[50px] font-semibold leading-[47px] md:leading-[70px]">
-            Alone, we can do so little,
+          Step Into the Unknown—Redefine Your Future with Us.
             <br />
-            together, we can move mountains.
+            {/* together, we can move mountains. */}
           </h4>
         </div>
       </div>

@@ -11,12 +11,12 @@ const Navbar = () => {
   const [toggleColl, setToggleColl] = useState(false);
 
   return (
-    <div className="fixed  md:left-[50px] top-6 z-20  md:right-[50px]">
+    <div className="fixed  md:left-[50px] left-[15px] right-[15px] top-6 z-[100]  md:right-[50px]">
       {/* <nav className="bg-white w-full z-20 top-6 rounded-[12px] py-2 "> */}
-      <nav className="bg-black flex  w-full items-center py-2  justify-between z-20 rounded-[14px] md:pr-6 ">
+      <nav className=" flex relative bg-black w-full items-center py-2  justify-between z-50 rounded-[14px] md:pr-6 ">
         {/* <div className="flex w-full items-center py-2 justify-between "> */}
         <Link to={"/"}>
-          <img src="/logo.png" className="w-full h-[50px]" alt="/" />
+          <img src="/logo.png" className="w-full h-[70px]" alt="/" />
         </Link>
         <div className=" md:pl-1 pl-40 pr-8 pt-4">
           <button
@@ -33,7 +33,8 @@ const Navbar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
-                viewBox="0 0 24 24"
+                viewBox="0 0 24 24 bg-transparent"
+                className="bg-transparent"
               >
                 <path
                   fill="#737373"
@@ -45,7 +46,8 @@ const Navbar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
-                viewBox="0 0 24 24"
+                viewBox="0 0 24 24 "
+                className="bg-transparent"
               >
                 <path
                   fill="#737373"
@@ -55,10 +57,10 @@ const Navbar = () => {
             )}
           </button>
         </div>
-        <div className="md:flex hidden gap-6">
+        <div className="md:flex hidden z-50 gap-6">
           <Link
             to={"/about-us"}
-            className="relative"
+            className="relative z-50"
             onMouseOut={() => setToggle((prev) => !prev)}
             onMouseOver={() => setToggle((prev) => !prev)}
           >
@@ -204,7 +206,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            to={"/"}
+            to={"/market-place"}
             className="relative"
             // onMouseOut={() => setToggleColl((prev) => !prev)}
             // onMouseOver={() => setToggleColl((prev) => !prev)}
@@ -241,6 +243,7 @@ const Navbar = () => {
           {/* </div> */}
         </div>
       </nav>
+      
       <Transition
         show={isOpen}
         enter="transition ease-out duration-500 transform"
@@ -252,7 +255,7 @@ const Navbar = () => {
       >
         {(ref) => (
           <div
-            className="lg:hidden bg-[#0e0e0e] w-full pl-6 pr-4 h-screen mt-3"
+            className="lg:hidden bg-[#0e0e0e] w-full pl-6 pr-4 h-screen "
             id="mobile-menu"
           >
             <div ref={ref} className="pt-10 pb-3 space-y-4">
@@ -539,12 +542,12 @@ const Navbar = () => {
               </div>
 
               <Link
-            to={"/"}
+            to={"/market-place"}
             className="relative"
             // onMouseOut={() => setToggleColl((prev) => !prev)}
             // onMouseOver={() => setToggleColl((prev) => !prev)}
           >
-            <h5 className="text-[#A3A3A3] cursor-pointer text-[18px]">
+            <h5 className="text-[#A3A3A3] mt-4 cursor-pointer text-[18px]">
               Marketplace
             </h5>
           </Link>

@@ -113,14 +113,11 @@ const Research = () => {
                       </div>
                       <div className="flex justify-center ">
                         <h3 className="text-[#f5f5f5] text-center leading-[45px] lg:leading-[60px]  z-10 text-[40px] lg:text-[4rem] ">
-                          We have a lot to offer
+                        Innovation and Research
+
                         </h3>
                       </div>
-                      <div className="flex justify-center">
-                        <h3 className="text-[#737373] z-10 text-center text-[19px] md:text-[25px] ">
-                          Revolutionizing Longevity and Cell Rejuvenation
-                        </h3>
-                      </div>
+                   
 
                       <div className="flex mt-5 mb-10 justify-center">
                         <div className="lg:flex z-10 gap-4">
@@ -156,7 +153,7 @@ const Research = () => {
     
         <ResearchServices />
      
-        <PicturesAlone />
+        {/* <PicturesAlone /> */}
 
         <Footer />
       </div>

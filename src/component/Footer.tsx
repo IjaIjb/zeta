@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="mt-10">
       <div className="bg-[#080808] relative overflow-hidden">
-        <div className="relative">
+        {/* <div className="relative">
           <img
             src="https://cdn.multiversx.com/webflow/Home-Hero-Bg-02.webp"
             alt=""
@@ -24,7 +24,7 @@ const Footer = () => {
             className="w-[550px] h-[550px]"
           />
         </div>
-        <div className="flex justify-center relative z-10">
+        <div className="flex justify-center relative z-[1]">
           <div className="max-w-[2000px] h-full md:px-14 px-4 pt-[100px] md:pb-[150px] pb-14 w-full">
             <div className="flex justify-center pb-5">
               <div className="text-[1.5rem] text-center font-[500] text-white">
@@ -50,13 +50,13 @@ const Footer = () => {
               </h5>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="flex justify-center relative z-10">
+        <div className="flex justify-center relative z-[1]">
           <div className="max-w-[2000px] h-full md:px-14 px-4 pt-[100px] pb-[150px] w-full">
      <div className="grid grid-cols-2">
           <div className=" text-white block  lg:hidden gap-5">
-          <img src="/logo.png"  className="w-[100px] h-[60px]"  alt="/"/>
+          <img src="/logo.png"  className="w-fit h-[70px]"  alt="/"/>
 
                 <div className="flex gap-4 mt-4">
                   <div>
@@ -151,8 +151,13 @@ const Footer = () => {
               </div>
             <div className="grid lg:grid-cols-5 md:grid-cols-2  gap-5 ">
               <div className=" text-white lg:block hidden gap-5">
-              <img src="/logo.png"  className="w-[100px] h-[50px]"  alt="/"/>
-
+              <img src="/logo.png"  className="w-fit h-[70px]"  alt="/"/>
+              <div className="flex text-[#737373]  ">
+            21 cape road, maitama Abuja Nigeria, 
+            </div>
+            <div className="flex text-[#737373]  ">
+            3401 N. Miami, Ave. Ste 230
+            </div>
                 <div className="flex gap-4 mt-4">
                   <div>
                     <svg
@@ -327,6 +332,8 @@ const Footer = () => {
                 <h5 className="text-[#737373] text-[13px]">Our Locations</h5>
               </div>
             </div>
+
+      
           </div>
         </div>
         

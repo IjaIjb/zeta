@@ -246,9 +246,9 @@ const Services = () => {
         <div id="solution">
           <Solutions />
         </div>
-        <div>
+        {/* <div>
           <ComprehensiveHealth />
-        </div>
+        </div> */}
         <div>
           <Telehealth />
         </div>
