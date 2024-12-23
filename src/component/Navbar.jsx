@@ -11,7 +11,7 @@ const Navbar = () => {
   const [toggleColl, setToggleColl] = useState(false);
 
   return (
-    <div className="fixed  md:left-[50px] left-[15px] right-[15px] top-6 z-[100]  md:right-[50px]">
+    <div className="fixed  md:left-[50px] left-[5px] right-[5px] top-6 z-[100]  md:right-[50px]">
       {/* <nav className="bg-white w-full z-20 top-6 rounded-[12px] py-2 "> */}
       <nav className=" flex relative bg-black w-full items-center py-2  justify-between z-50 rounded-[14px] md:pr-6 ">
         {/* <div className="flex w-full items-center py-2 justify-between "> */}
@@ -273,12 +273,12 @@ const Navbar = () => {
                     <div
                       className={`${
                         toggle ? "flex" : "hidden"
-                      } p-2 bg-[#171717] z-10 absolute -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
+                      } p-2 bg-[#171717] -left-6 z-10 absolute -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
                     >
                       <div className="flex flex-col gap-3">
                         <h4 className="text-white">Who we are</h4>
                         <h4 className="text-white">Mission</h4>
-                        <h4 className="text-white">Vission</h4>
+                        <h4 className="text-white">Vision</h4>
                       </div>
                     </div>
                   </Link>
@@ -326,7 +326,7 @@ const Navbar = () => {
                     <div
                       className={`${
                         toggleRe ? "flex" : "hidden"
-                      } p-2 bg-[#171717] z-10 absolute -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
+                      } p-2 bg-[#171717] -left-6 z-10 absolute -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
                     >
                       <div className="flex flex-col gap-3">
                         <h4 className="text-white">Longevity Research</h4>
@@ -386,7 +386,7 @@ const Navbar = () => {
                     <div
                       className={`${
                         toggleSer ? "flex" : "hidden"
-                      } p-2 bg-[#171717] absolute z-10 -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
+                      } p-2 bg-[#171717] absolute -left-6 z-10 -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
                     >
                       <div className="flex flex-col gap-3">
                         <h4 className="text-white">Contract Research</h4>
@@ -442,7 +442,7 @@ const Navbar = () => {
                     <div
                       className={`${
                         toggleCar ? "flex" : "hidden"
-                      } p-2 bg-[#171717] z-10 absolute -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
+                      } p-2 bg-[#171717] z-10 -left-6 absolute -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
                     >
                       <div className="flex flex-col gap-3">
                         <h4 className="text-white">Join Our Team</h4>
@@ -496,7 +496,7 @@ const Navbar = () => {
                     <div
                       className={`${
                         toggleColl ? "flex" : "hidden"
-                      } p-2 bg-[#171717] z-10 absolute -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
+                      } p-2 bg-[#171717] z-10 -left-6 absolute -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
                     >
                    <div className="flex flex-col gap-3">
                 <h4 className="text-white">Partner with Us</h4>
@@ -567,7 +567,7 @@ const Navbar = () => {
                     <div
                       className={`${
                         toggleCon ? "flex" : "hidden"
-                      } p-2 bg-[#171717] z-10 absolute -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
+                      } p-2 bg-[#171717] z-10 -left-6 absolute -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
                     >
                     <div className="flex flex-col gap-3">
                 <Link to="/contact-us#get-in-touch">

@@ -8,10 +8,20 @@ import FutureProof from "./FutureProof";
 import ExploreEco from "./ExploreEco";
 import PicturesAlone from "./PicturesAlone";
 import LatestNews from "./LatestNews";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
-    <div className="bg-[#262626] h-full  relative">
+    <>
+      <Helmet>
+      <meta name="description" content="Welcome to Zetakree Biotech – where AI and biotechnology redefine longevity. Discover innovative health solutions to combat aging and enhance life quality." />
+<meta name="keywords" content="Zetakree Biotech, longevity, AI health insights, anti-aging, biotechnology, health solutions, personalized wellness" />
+<meta name="author" content="Japheth Jonathan" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ {/* <title>Home - Zetakree Biotech</title> */}
+      </Helmet>
+
+    <div className="bg-[#262626] h-full">
       <div className="relative">
         <div
           className="absolute inset-0 bg-cover "
@@ -346,6 +356,7 @@ const Home = () => {
       {/* <LatestNews /> */}
       <Footer />
     </div>
+    </>
   );
 };
 

@@ -13,7 +13,7 @@ const LetsMake = () => {
           </div>
           <div className="flex justify-center">
           <h4 className="text-center max-w-[800px] text-[#F5F5F5] text-[16px] opacity-40 pt-4 pb-10">
-          Our groundbreaking AI software utilizes patient data and critical biomarkers to predict life expectancy, offering personalized guidance to extend lifespan. At Zetakree, we help you not only live longer but live better
+         Our groundbreaking AI software utilizes patient data and critical biomarkers to predict life expectancy, offering personalized guidance to extend lifespan. At Zetakree, we help you not only live longer but live better.
           </h4>
           </div>
           {/* <div className="grid lg:grid-cols-12 gap-4 items-center ">

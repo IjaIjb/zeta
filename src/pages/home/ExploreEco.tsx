@@ -3,7 +3,7 @@ import React from "react";
 const ExploreEco = () => {
   return (
     <div className="overflow-hidden">
-      <div className="grid lg:grid-cols-12 gap-4 items-center -mt-20">
+      <div className="grid lg:grid-cols-12 gap-4 items-center lg:-mt-20">
         <div className="col-span-7">
           <img
             src="https://cdn.multiversx.com/webflow/ecosystem-visual.webp"

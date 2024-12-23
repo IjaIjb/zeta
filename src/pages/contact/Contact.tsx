@@ -4,6 +4,7 @@ import Footer from "../../component/Footer";
 import ContactMap from "./ContactMap";
 import { useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   const location = useLocation();
@@ -19,6 +20,16 @@ const Contact = () => {
     }
   }, [location]);
   return (
+
+    <>
+  <Helmet>
+  <meta name="description" content="Connect with Zetakree Biotech – Reach out via info@zetakree.com to collaborate and explore groundbreaking AI and biotechnology solutions for longevity." />
+<meta name="keywords" content="Contact Zetakree, biotech collaboration, longevity solutions, AI health technology, info@zetakree.com, Japheth Jonathan" />
+<meta name="author" content="Japheth Jonathan" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* <title>Contact Us - Zetakree Biotech</title> */}
+      </Helmet>
+
     <div className="bg-[#262626] h-full  relative">
       <div className="bg-black">
         <div
@@ -199,6 +210,7 @@ const Contact = () => {
 
       <Footer />
     </div>
+    </>
   );
 };
 

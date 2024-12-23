@@ -20,7 +20,7 @@ const Secure = () => {
           </div>
           <div className="flex justify-center">
             <h4 className="text-[#737373] text-center text-[18px] max-w-[750px]">
-            Empowering health and longevity through real-time tracking, AI-driven insights, and personalized wellness solutions. From predicting longevity to monitoring chronic conditions, our app is designed to guide you towards a healthier, longer life
+            Empowering health and longevity through real-time tracking, AI-driven insights, and personalized wellness solutions. From predicting longevity to monitoring chronic conditions, our app is designed to guide you towards a healthier, longer life.
             </h4>
           </div>
 
