@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -54,9 +55,9 @@ const Footer = () => {
 
         <div className="flex justify-center relative z-[1]">
           <div className="max-w-[2000px] h-full md:px-14 px-4 pt-[100px] pb-[150px] w-full">
-     <div className="grid grid-cols-2">
-          <div className=" text-white block  lg:hidden gap-5">
-          <img src="/logo.png"  className="w-fit h-[70px]"  alt="/"/>
+            <div className="grid grid-cols-2">
+              <div className=" text-white block  lg:hidden gap-5">
+                <img src="/logo.png" className="w-fit h-[70px]" alt="/" />
 
                 <div className="flex gap-4 mt-4">
                   <div>
@@ -148,18 +149,20 @@ const Footer = () => {
                   </svg>
                 </div>
               </div>
-              </div>
+            </div>
             <div className="grid lg:grid-cols-5 md:grid-cols-2  gap-5 ">
               <div className=" text-white lg:block hidden gap-5">
-              <img src="/logo.png"  className="w-fit h-[70px]"  alt="/"/>
-              <div className="flex text-[#737373]  ">
-            21 cape road, maitama Abuja Nigeria, 
-            </div>
-            <div className="flex text-[#737373]  ">
-            3401 N. Miami, Ave. Ste 230
-            </div>
+                <Link to={"/"}>
+                  <img src="/logo.png" className="w-fit h-[70px]" alt="/" />
+                </Link>
+                <div className="flex text-[#737373]  ">
+                  21 cape road, maitama Abuja Nigeria,
+                </div>
+                <div className="flex text-[#737373]  ">
+                  3401 N. Miami, Ave. Ste 230
+                </div>
                 <div className="flex gap-4 mt-4">
-                  <div>
+                  <a href="https://x.com/zetakree" target="_blank">
                     <svg
                       width="100%"
                       height="100%"
@@ -172,7 +175,7 @@ const Footer = () => {
                         fill="currentColor"
                       ></path>
                     </svg>
-                  </div>
+                  </a>
                   <div>
                     <svg
                       width="100%"
@@ -187,7 +190,7 @@ const Footer = () => {
                       ></path>
                     </svg>
                   </div>
-                  <div>
+                  {/* <div>
                     <svg
                       width="100%"
                       height="100%"
@@ -200,9 +203,9 @@ const Footer = () => {
                         fill="currentColor"
                       ></path>
                     </svg>
-                  </div>
+                  </div> */}
 
-                  <div>
+                  <a href="https://web.facebook.com/zetakree" target="_blank">
                     <svg
                       width="100%"
                       height="100%"
@@ -215,9 +218,10 @@ const Footer = () => {
                         fill="currentColor"
                       ></path>
                     </svg>
-                  </div>
+                  </a>
 
-                  <div className="lg:hidden block">
+                  <div className=" block">
+                  <a href="https://www.linkedin.com/company/zetakree" target="_blank">
                     <svg
                       width="100%"
                       height="100%"
@@ -230,10 +234,12 @@ const Footer = () => {
                         fill="currentColor"
                       ></path>
                     </svg>
+                    </a>
                   </div>
                 </div>
 
-                <div className="hidden lg:block mt-2">
+                {/* <div className="hidden lg:block mt-2">
+                  <a href="https://www.linkedin.com/company/zetakree" target="_blank">
                   <svg
                     width="20%"
                     height="20%"
@@ -246,7 +252,8 @@ const Footer = () => {
                       fill="currentColor"
                     ></path>
                   </svg>
-                </div>
+                  </a>
+                </div> */}
               </div>
 
               <div className="flex flex-col gap-3">
@@ -327,16 +334,15 @@ const Footer = () => {
               </div>
 
               <div className="flex flex-col gap-3">
-                <h5 className="text-white text-[13px]">Contact Us</h5>
+                <Link to={"/contact-us"} className="text-white text-[13px]">
+                  Contact Us
+                </Link>
                 <h5 className="text-[#737373] text-[13px]">Get in Touch</h5>
                 <h5 className="text-[#737373] text-[13px]">Our Locations</h5>
               </div>
             </div>
-
-      
           </div>
         </div>
-        
       </div>
     </div>
   );

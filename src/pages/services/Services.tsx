@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
 import ComprehensiveHealth from "./ComprehensiveHealth";
 import Telehealth from "./Telehealth";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const location = useLocation();
@@ -194,8 +195,7 @@ const Services = () => {
                       </div>
                       <div className="flex justify-center ">
                         <h3 className="text-[#f5f5f5] text-center leading-[45px] lg:leading-[60px] max-w-[700px] z-10 text-[40px] lg:text-[50px] ">
-                        AI-Powered Health Platform
-
+                          AI-Powered Health Platform
                         </h3>
                       </div>
                       <div className="flex justify-center">
@@ -206,7 +206,10 @@ const Services = () => {
 
                       <div className="flex mt-5  justify-center mb-[100px]">
                         <div className="lg:flex z-10 gap-4">
-                          <div className="flex z-10 gap-2 justify-center py-2 text-white bg-[#262626] items-center text-[16px] px-3  rounded-[12px]">
+                          <Link
+                            to={"/research"}
+                            className="flex z-10 gap-2 justify-center py-2 text-white bg-[#262626] items-center text-[16px] px-3  rounded-[12px]"
+                          >
                             Explore Our Innovations
                             <svg
                               width="31"
@@ -220,15 +223,16 @@ const Services = () => {
                                 fill="#F5F5F5"
                               ></path>
                             </svg>
-                          </div>
+                          </Link>
 
-                          <div className="flex z-10 mt-3 lg:mt-0 gap-2 py-2 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]">
+                          <Link
+                            to={"/contact-us"}
+                            className="flex z-10 mt-3 lg:mt-0 gap-2 py-2 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]"
+                          >
                             Contact Us
-                          </div>
+                          </Link>
                         </div>
                       </div>
-
-                    
 
                       <div className="flex justify-center pb-10">
                         <div className="max-w-[2000px] md:px-14 px-4 w-full"></div>
@@ -240,9 +244,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div id="services">
-          {/* <Servi /> */}
-        </div>
+        <div id="services">{/* <Servi /> */}</div>
         <div id="solution">
           <Solutions />
         </div>

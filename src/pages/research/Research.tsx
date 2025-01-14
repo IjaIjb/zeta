@@ -6,6 +6,7 @@ import PicturesAlone from "../home/PicturesAlone";
 import { useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
 import ResearchServices from "./ResearchServices";
+import { Link } from "react-router-dom";
 
 const Research = () => {
   const location = useLocation();
@@ -113,15 +114,16 @@ const Research = () => {
                       </div>
                       <div className="flex justify-center ">
                         <h3 className="text-[#f5f5f5] text-center leading-[45px] lg:leading-[60px]  z-10 text-[40px] lg:text-[4rem] ">
-                        Innovation and Research
-
+                          Innovation and Research
                         </h3>
                       </div>
-                   
 
                       <div className="flex mt-5 mb-10 justify-center">
                         <div className="lg:flex z-10 gap-4">
-                          <div className="flex z-10 gap-2 justify-center py-2 text-white bg-[#262626] items-center text-[16px] px-3  rounded-[12px]">
+                          <Link
+                            to={"/research"}
+                            className="flex z-10 gap-2 justify-center py-2 text-white bg-[#262626] items-center text-[16px] px-3  rounded-[12px]"
+                          >
                             Explore Our Innovations
                             <svg
                               width="31"
@@ -135,11 +137,14 @@ const Research = () => {
                                 fill="#F5F5F5"
                               ></path>
                             </svg>
-                          </div>
+                          </Link>
 
-                          <div className="flex z-10 mt-3 lg:mt-0 gap-2 py-2 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]">
+                          <Link
+                            to={"/contact-us"}
+                            className="flex z-10 mt-3 lg:mt-0 gap-2 py-2 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]"
+                          >
                             Contact Us
-                          </div>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -150,9 +155,9 @@ const Research = () => {
           </div>
         </div>
         <FocusArea />
-    
+
         <ResearchServices />
-     
+
         {/* <PicturesAlone /> */}
 
         <Footer />

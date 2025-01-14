@@ -121,7 +121,7 @@ const Navbar = () => {
             onMouseOver={() => setToggleSer((prev) => !prev)}
           >
             <h5 className="text-[#A3A3A3] cursor-pointer text-[18px]">
-             Solutions
+              Solutions
             </h5>
             <div
               className={`${
@@ -192,7 +192,7 @@ const Navbar = () => {
               } p-2 bg-[#171717] absolute -bottom-30 right-0 px-6 py-3 min-w-[450px] rounded-[15px]   shadow-[#171717] shadow-md`}
             >
               <div className="flex flex-col gap-3">
-                <h4 className="text-white">Partner with Us</h4>
+                <Link to="/partnership" className="text-white">Partner with Us</Link>
                 <h4 className="text-white">
                   Research Grants and Funding Opportunities
                 </h4>
@@ -243,7 +243,7 @@ const Navbar = () => {
           {/* </div> */}
         </div>
       </nav>
-      
+
       <Transition
         show={isOpen}
         enter="transition ease-out duration-500 transform"
@@ -381,7 +381,7 @@ const Navbar = () => {
                     onMouseOver={() => setToggleSer((prev) => !prev)}
                   >
                     <h5 className="text-[#A3A3A3] cursor-pointer text-[20px]">
-                  Solutions
+                      Solutions
                     </h5>
                     <div
                       className={`${
@@ -481,34 +481,33 @@ const Navbar = () => {
                 </div>
               </div>
 
-
               <div className="relative">
                 <div className="flex gap-3">
                   <Link
-               to={"/collaborators"}
+                    to={"/collaborators"}
                     className="relative"
                     onMouseOut={() => setToggleCar((prev) => !prev)}
                     onMouseOver={() => setToggleCar((prev) => !prev)}
                   >
                     <h5 className="text-[#A3A3A3] cursor-pointer text-[20px]">
-                    Collaborations
+                      Collaborations
                     </h5>
                     <div
                       className={`${
                         toggleColl ? "flex" : "hidden"
                       } p-2 bg-[#171717] z-10 -left-6 absolute -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
                     >
-                   <div className="flex flex-col gap-3">
-                <h4 className="text-white">Partner with Us</h4>
-                <h4 className="text-white">
-                  Research Grants and Funding Opportunities
-                </h4>
-                <h4 className="text-white">Academic Collaborations</h4>
-                <h4 className="text-white">Resources</h4>
-                <h4 className="text-white">Blog and Insights</h4>
-                <h4 className="text-white">Case Studies</h4>
-                <h4 className="text-white">White Papers</h4>
-              </div>
+                      <div className="flex flex-col gap-3">
+                        <h4 className="text-white">Partner with Us</h4>
+                        <h4 className="text-white">
+                          Research Grants and Funding Opportunities
+                        </h4>
+                        <h4 className="text-white">Academic Collaborations</h4>
+                        <h4 className="text-white">Resources</h4>
+                        <h4 className="text-white">Blog and Insights</h4>
+                        <h4 className="text-white">Case Studies</h4>
+                        <h4 className="text-white">White Papers</h4>
+                      </div>
                     </div>
                   </Link>
                   <span className=" text-white pr-10">
@@ -542,41 +541,40 @@ const Navbar = () => {
               </div>
 
               <Link
-            to={"/market-place"}
-            className="relative"
-            // onMouseOut={() => setToggleColl((prev) => !prev)}
-            // onMouseOver={() => setToggleColl((prev) => !prev)}
-          >
-            <h5 className="text-[#A3A3A3] mt-4 cursor-pointer text-[18px]">
-              Marketplace
-            </h5>
-          </Link>
+                to={"/market-place"}
+                className="relative"
+                // onMouseOut={() => setToggleColl((prev) => !prev)}
+                // onMouseOver={() => setToggleColl((prev) => !prev)}
+              >
+                <h5 className="text-[#A3A3A3] mt-4 cursor-pointer text-[18px]">
+                  Marketplace
+                </h5>
+              </Link>
 
-
-          <div className="relative">
+              <div className="relative">
                 <div className="flex gap-3">
                   <Link
-              to={"/contact-us"}
+                    to={"/contact-us"}
                     className="relative"
                     onMouseOut={() => setToggleCon((prev) => !prev)}
                     onMouseOver={() => setToggleCon((prev) => !prev)}
                   >
                     <h5 className="text-[#A3A3A3] cursor-pointer text-[20px]">
-                    Contact Us
+                      Contact Us
                     </h5>
                     <div
                       className={`${
                         toggleCon ? "flex" : "hidden"
                       } p-2 bg-[#171717] z-10 -left-6 absolute -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
                     >
-                    <div className="flex flex-col gap-3">
-                <Link to="/contact-us#get-in-touch">
-                  <h4 className="text-white">Get in Touch</h4>
-                </Link>
-                <Link to="/contact-us#our-locations">
-                  <h4 className="text-white">Our Locations</h4>
-                </Link>
-              </div>
+                      <div className="flex flex-col gap-3">
+                        <Link to="/contact-us#get-in-touch">
+                          <h4 className="text-white">Get in Touch</h4>
+                        </Link>
+                        <Link to="/contact-us#our-locations">
+                          <h4 className="text-white">Our Locations</h4>
+                        </Link>
+                      </div>
                     </div>
                   </Link>
                   <span className=" text-white pr-10">
@@ -608,8 +606,6 @@ const Navbar = () => {
                   </span>
                 </div>
               </div>
-
-
             </div>
           </div>
         )}
