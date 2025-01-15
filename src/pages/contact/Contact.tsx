@@ -42,7 +42,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://form-backend-47lt.onrender.com/api/submissions', {
+      const response = await fetch('https://zeta-nvjw.onrender.com/api/submissions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
