@@ -5,6 +5,8 @@ import ContactMap from "./ContactMap";
 import { useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
 import { Helmet } from "react-helmet";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const location = useLocation();
@@ -51,7 +53,9 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        alert('Form submitted successfully!');
+      toast.success('Form submitted successfully!');
+
+        // alert('Form submitted successfully!');
         setFormData({
           first_name: '',
           last_name: '',
@@ -60,11 +64,15 @@ const Contact = () => {
           message: '',
         });
       } else {
-        alert('Failed to submit form');
+      toast.success('Failed to submit form');
+
+        // alert('Failed to submit form');
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      alert('An error occurred while submitting the form');
+      toast.success('An error occurred while submitting the form');
+
+      // alert('An error occurred while submitting the form');
     }
   };
 
@@ -261,6 +269,17 @@ const Contact = () => {
             </div>
           </form>
 </div>
+<ToastContainer
+          position="top-center"
+          autoClose={2000}
+          hideProgressBar={true}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
         </div>
           <div id="our-locations">
           <ContactMap />
