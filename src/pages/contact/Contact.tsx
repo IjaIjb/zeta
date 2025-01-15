@@ -64,13 +64,13 @@ const Contact = () => {
           message: '',
         });
       } else {
-      toast.success('Failed to submit form');
+      toast.error('Failed to submit form');
 
         // alert('Failed to submit form');
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      toast.success('An error occurred while submitting the form');
+      toast.error('An error occurred while submitting the form');
 
       // alert('An error occurred while submitting the form');
     }
