@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../component/Navbar";
 import Footer from "../../component/Footer";
 import ContactMap from "./ContactMap";
@@ -19,6 +19,56 @@ const Contact = () => {
       });
     }
   }, [location]);
+
+  const [formData, setFormData] = useState({
+    first_name: '',
+    last_name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+
+  // Handle input changes
+  const handleChange = (e:any) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e:any) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('https://form-backend-47lt.onrender.com/api/submissions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Form submitted successfully!');
+        setFormData({
+          first_name: '',
+          last_name: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
+      } else {
+        alert('Failed to submit form');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An error occurred while submitting the form');
+    }
+  };
+
+  
   return (
 
     <>
@@ -94,7 +144,7 @@ const Contact = () => {
       {/* <div className="grid lg:grid-cols-2 gap-4 lg:gap-10 items-center"> */}
       <div className="flex justify-center">
       <div className="max-w-[2000px] lg:px-14 px-3 w-full">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="grid md:grid-cols-2 gap-4">
             <div className="relative w-full mb-6 mt-4">
               <label
@@ -108,6 +158,8 @@ const Contact = () => {
                 className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
                 placeholder="Enter First Name"
                 name="first_name"
+                value={formData.first_name}
+                onChange={handleChange}
                 // onChange={handleChange}
                 // onInput={handleInput}
                 required
@@ -125,6 +177,8 @@ const Contact = () => {
                 className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
                 placeholder="Enter Last Name"
                 name="last_name"
+                value={formData.last_name}
+                onChange={handleChange}
                 // onChange={handleChange}
                 // onInput={handleInput}
                 required
@@ -147,6 +201,8 @@ const Contact = () => {
                 className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
                 placeholder="Enter email"
                 name="email"
+                value={formData.email}
+                onChange={handleChange}
                 required
                 // onChange={handleChange}
                 // value={userData.email}
@@ -165,6 +221,8 @@ const Contact = () => {
                 className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
                 placeholder="Enter Phone Number"
                 name="phone"
+                value={formData.phone}
+                onChange={handleChange}
                 // onChange={handleChange}
                 // onInput={handleInput}
                 required
@@ -186,6 +244,8 @@ const Contact = () => {
                 rows={4}
                 required
                 name="message"
+                value={formData.message}
+                onChange={handleChange}
                 // onChange={() => handleChange}
                 className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
                 placeholder="Enter your message here..."
