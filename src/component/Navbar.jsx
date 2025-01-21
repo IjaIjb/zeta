@@ -215,7 +215,7 @@ const Navbar = () => {
               Marketplace
             </h5>
           </Link>
-          <Link
+          {/* <Link
             to={"/app-features"}
             className="relative"
             // onMouseOut={() => setToggleColl((prev) => !prev)}
@@ -224,7 +224,7 @@ const Navbar = () => {
             <h5 className="text-[#A3A3A3] cursor-pointer text-[16px]">
              App Features
             </h5>
-          </Link>
+          </Link> */}
           <Link
             to={"/contact-us"}
             className="relative"
@@ -399,9 +399,9 @@ const Navbar = () => {
                       } p-2 bg-[#171717] absolute -left-6 z-10 -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
                     >
                       <div className="flex flex-col gap-3">
-                      <Link to="/app-features">
+                      {/* <Link to="/app-features">
                   <h4 className="text-white">Our App Features</h4>
-                </Link>
+                </Link> */}
                         <h4 className="text-white">Contract Research</h4>
                         <h4 className="text-white">Clinical Trials</h4>
                         <h4 className="text-white">Data Analysis Services</h4>
@@ -565,7 +565,7 @@ const Navbar = () => {
                 </h5>
               </Link>
 
-              <Link
+              {/* <Link
               to={"/app-features"}
                 className="relative"
                 // onMouseOut={() => setToggleColl((prev) => !prev)}
@@ -574,7 +574,7 @@ const Navbar = () => {
                 <h5 className="text-[#A3A3A3] mt-4 cursor-pointer text-[20px]">
                  App Features
                 </h5>
-              </Link>
+              </Link> */}
 
               <div className="relative">
                 <div className="flex gap-3">
