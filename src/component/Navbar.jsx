@@ -64,7 +64,7 @@ const Navbar = () => {
             onMouseOut={() => setToggle((prev) => !prev)}
             onMouseOver={() => setToggle((prev) => !prev)}
           >
-            <h5 className="text-[#A3A3A3] cursor-pointer text-[18px]">
+            <h5 className="text-[#A3A3A3] cursor-pointer text-[16px]">
               About us
             </h5>
             <div
@@ -95,7 +95,7 @@ const Navbar = () => {
             onMouseOut={() => setToggleRe((prev) => !prev)}
             onMouseOver={() => setToggleRe((prev) => !prev)}
           >
-            <h5 className="text-[#A3A3A3] cursor-pointer text-[18px]">
+            <h5 className="text-[#A3A3A3] cursor-pointer text-[16px]">
               Research & Innovation
             </h5>
             <div
@@ -120,7 +120,7 @@ const Navbar = () => {
             onMouseOut={() => setToggleSer((prev) => !prev)}
             onMouseOver={() => setToggleSer((prev) => !prev)}
           >
-            <h5 className="text-[#A3A3A3] cursor-pointer text-[18px]">
+            <h5 className="text-[#A3A3A3] cursor-pointer text-[16px]">
               Solutions
             </h5>
             <div
@@ -129,19 +129,19 @@ const Navbar = () => {
               } p-2 bg-[#171717] absolute -bottom-30  px-6 py-3 min-w-[250px] rounded-[15px]   shadow-[#171717] shadow-md`}
             >
               <div className="flex flex-col gap-3">
-                <Link to="/services#solution">
+                <Link to="/solutions">
                   <h4 className="text-white">Solution</h4>
                 </Link>
-                <Link to="/services#services">
+                <Link to="/solutions#services">
                   <h4 className="text-white">Contract Research</h4>
                 </Link>
-                <Link to="/services#services">
+                <Link to="/solutions#services">
                   <h4 className="text-white">Clinical Trials</h4>
                 </Link>
-                <Link to="/services#services">
+                <Link to="/solutions#services">
                   <h4 className="text-white">Data Analysis Services</h4>
                 </Link>
-                <Link to="/services#services">
+                <Link to="/solutions#services">
                   <h4 className="text-white">Custom Biomedical Solutions</h4>
                 </Link>
               </div>
@@ -154,7 +154,7 @@ const Navbar = () => {
             onMouseOut={() => setToggleCar((prev) => !prev)}
             onMouseOver={() => setToggleCar((prev) => !prev)}
           >
-            <h5 className="text-[#A3A3A3] cursor-pointer text-[18px]">
+            <h5 className="text-[#A3A3A3] cursor-pointer text-[16px]">
               Careers
             </h5>
             <div
@@ -183,7 +183,7 @@ const Navbar = () => {
             onMouseOut={() => setToggleColl((prev) => !prev)}
             onMouseOver={() => setToggleColl((prev) => !prev)}
           >
-            <h5 className="text-[#A3A3A3] cursor-pointer text-[18px]">
+            <h5 className="text-[#A3A3A3] cursor-pointer text-[16px]">
               Collaborations
             </h5>
             <div
@@ -211,8 +211,18 @@ const Navbar = () => {
             // onMouseOut={() => setToggleColl((prev) => !prev)}
             // onMouseOver={() => setToggleColl((prev) => !prev)}
           >
-            <h5 className="text-[#A3A3A3] cursor-pointer text-[18px]">
+            <h5 className="text-[#A3A3A3] cursor-pointer text-[16px]">
               Marketplace
+            </h5>
+          </Link>
+          <Link
+            to={"/app-features"}
+            className="relative"
+            // onMouseOut={() => setToggleColl((prev) => !prev)}
+            // onMouseOver={() => setToggleColl((prev) => !prev)}
+          >
+            <h5 className="text-[#A3A3A3] cursor-pointer text-[16px]">
+             App Features
             </h5>
           </Link>
           <Link
@@ -221,7 +231,7 @@ const Navbar = () => {
             onMouseOut={() => setToggleCon((prev) => !prev)}
             onMouseOver={() => setToggleCon((prev) => !prev)}
           >
-            <h5 className="text-[#A3A3A3] cursor-pointer text-[18px]">
+            <h5 className="text-[#A3A3A3] cursor-pointer text-[16px]">
               Contact Us
             </h5>
             <div
@@ -389,6 +399,9 @@ const Navbar = () => {
                       } p-2 bg-[#171717] absolute -left-6 z-10 -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
                     >
                       <div className="flex flex-col gap-3">
+                      <Link to="/app-features">
+                  <h4 className="text-white">Our App Features</h4>
+                </Link>
                         <h4 className="text-white">Contract Research</h4>
                         <h4 className="text-white">Clinical Trials</h4>
                         <h4 className="text-white">Data Analysis Services</h4>
@@ -498,7 +511,8 @@ const Navbar = () => {
                       } p-2 bg-[#171717] z-10 -left-6 absolute -bottom-30  mx-4 my-0 min-w-[200px] rounded-[15px]   shadow-[#171717] shadow-md`}
                     >
                       <div className="flex flex-col gap-3">
-                        <h4 className="text-white">Partner with Us</h4>
+                      <Link to="/partnership" className="text-white">Partner with Us</Link>
+
                         <h4 className="text-white">
                           Research Grants and Funding Opportunities
                         </h4>
@@ -546,8 +560,19 @@ const Navbar = () => {
                 // onMouseOut={() => setToggleColl((prev) => !prev)}
                 // onMouseOver={() => setToggleColl((prev) => !prev)}
               >
-                <h5 className="text-[#A3A3A3] mt-4 cursor-pointer text-[18px]">
+                <h5 className="text-[#A3A3A3] mt-4 cursor-pointer text-[20px]">
                   Marketplace
+                </h5>
+              </Link>
+
+              <Link
+              to={"/app-features"}
+                className="relative"
+                // onMouseOut={() => setToggleColl((prev) => !prev)}
+                // onMouseOver={() => setToggleColl((prev) => !prev)}
+              >
+                <h5 className="text-[#A3A3A3] mt-4 cursor-pointer text-[20px]">
+                 App Features
                 </h5>
               </Link>
 

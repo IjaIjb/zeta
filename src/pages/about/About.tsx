@@ -348,63 +348,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="relative group">
-                <div className="border border-black shadow-2xl rounded-[10px]">
-                  <div className="flex border-b pt-4 border-black justify-center">
-                    <img
-                      src="/images/rteam1.jpg"
-                      className="w-[300px] h-[300px]"
-                      alt="/"
-                    />
-                  </div>
-                  <div className="px-9 py-3 text-white">
-                    <div className="flex justify-between">
-                      {/* Tooltip Container */}
-                      <div className="relative">
-                        <h5 className="text-[20px] font-[600] cursor-pointer">
-                          Karly (Emma) Terlevich
-                        </h5>
-                        {/* Tooltip */}
-                        {/* <div className="absolute bottom-full left-[110px] transform -translate-x-1/2 mb-2 w-[300px] bg-black text-white text-sm rounded-md shadow-md p-2 opacity-0 group-hover:opacity-100 transition-opacity">
-            Zeta Jonathan is the CEO with over 10 years of experience in leadership and innovation.
-          </div> */}
-                      </div>
-                      {/* <svg
-          width="8%"
-          height="8%"
-          viewBox="0 0 30 30"
-          fill="white"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M24 4.5C24.7969 4.5 25.5 5.20312 25.5 6.04688V24C25.5 24.8438 24.7969 25.5 24 25.5H5.95312C5.15625 25.5 4.5 24.8438 4.5 24V6.04688C4.5 5.20312 5.15625 4.5 5.95312 4.5H24ZM10.8281 22.5V12.5156H7.73438V22.5H10.8281ZM9.28125 11.1094C10.2656 11.1094 11.0625 10.3125 11.0625 9.32812C11.0625 8.34375 10.2656 7.5 9.28125 7.5C8.25 7.5 7.45312 8.34375 7.45312 9.32812C7.45312 10.3125 8.25 11.1094 9.28125 11.1094ZM22.5 22.5V17.0156C22.5 14.3438 21.8906 12.2344 18.75 12.2344C17.25 12.2344 16.2188 13.0781 15.7969 13.875H15.75V12.5156H12.7969V22.5H15.8906V17.5781C15.8906 16.2656 16.125 15 17.7656 15C19.3594 15 19.3594 16.5 19.3594 17.625V22.5H22.5Z"
-            fill="white"
-          ></path>
-        </svg> */}
-                      <div className="flex space-x-4 ">
-                        <a
-                          href={`mailto:`}
-                          className="text-gray-300 hover:text-blue-400"
-                          title="Email"
-                        >
-                          <IoMail className="w-7 h-7" />
-                        </a>
-                        <a
-                          href={"/"}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-gray-300 hover:text-blue-400"
-                          title="LinkedIn"
-                        >
-                          <FaLinkedin className="w-7 h-7" />
-                        </a>
-                      </div>
-                    </div>
-                    <h4 className="text-gray-300">Chief Financial Officer</h4>
-                  </div>
-                </div>
-              </div>
-
+            
               <div className="relative group">
                 <div className="border border-black shadow-2xl rounded-[10px]">
                   <div className="flex border-b pt-4 border-black justify-center">

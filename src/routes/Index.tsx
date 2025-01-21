@@ -9,6 +9,7 @@ const PartnersPage = lazy(() => import("../pages/partner/Partner"));
 const CollaboratorsPage = lazy(() => import("../pages/collaborators/Collaborators"));
 const ContactusPage = lazy(() => import("../pages/contact/Contact"));
 const MarketPlacePage = lazy(() => import("../pages/marketplace/MarketPlace"));
+const AppFeaturePage = lazy(() => import("../pages/AppFeatures"));
 
 const routes = [
     {
@@ -51,7 +52,10 @@ const routes = [
       path: "/market-place",
       component: MarketPlacePage,
     },
-  
+    {
+      path: "/app-features",
+      component: AppFeaturePage,
+    },
   
     
   ];
