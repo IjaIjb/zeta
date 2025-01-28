@@ -7,9 +7,11 @@ import { scroller } from "react-scroll";
 import { Helmet } from "react-helmet";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import LoadingSpinner from "../../component/UI/LoadingSpinner";
 
 const Contact = () => {
   const location = useLocation();
+  const [loader, setLoader] = useState(false);
 
   useEffect(() => {
     if (location.hash) {
@@ -23,15 +25,15 @@ const Contact = () => {
   }, [location]);
 
   const [formData, setFormData] = useState({
-    first_name: '',
-    last_name: '',
-    email: '',
-    phone: '',
-    message: '',
+    first_name: "",
+    last_name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
 
   // Handle input changes
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -40,92 +42,103 @@ const Contact = () => {
   };
 
   // Handle form submission
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
+    setLoader(true);
 
     try {
-      const response = await fetch('https://zeta-nvjw.onrender.com/api/submissions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
+      const response = await fetch(
+        "https://zeta-nvjw.onrender.com/api/submissions",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+console.log(response)
       if (response.ok) {
-      toast.success('Form submitted successfully!');
+        toast.success("Form submitted successfully!");
 
         // alert('Form submitted successfully!');
         setFormData({
-          first_name: '',
-          last_name: '',
-          email: '',
-          phone: '',
-          message: '',
+          first_name: "",
+          last_name: "",
+          email: "",
+          phone: "",
+          message: "",
         });
+        setLoader(false);
       } else {
-      toast.error('Failed to submit form');
+        toast.error("Failed to submit form");
+        setLoader(false);
 
         // alert('Failed to submit form');
       }
     } catch (error) {
-      console.error('Error submitting form:', error);
-      toast.error('An error occurred while submitting the form');
+      console.error("Error submitting form:", error);
+      toast.error("An error occurred while submitting the form");
+      setLoader(false);
 
       // alert('An error occurred while submitting the form');
     }
   };
 
-  
   return (
-
     <>
-  <Helmet>
-  <meta name="description" content="Connect with Zetakree Biotech – Reach out via info@zetakree.com to collaborate and explore groundbreaking AI and biotechnology solutions for longevity." />
-<meta name="keywords" content="Contact Zetakree, biotech collaboration, longevity solutions, AI health technology, info@zetakree.com, Japheth Jonathan" />
-<meta name="author" content="Japheth Jonathan" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <Helmet>
+        <meta
+          name="description"
+          content="Connect with Zetakree Biotech – Reach out via info@zetakree.com to collaborate and explore groundbreaking AI and biotechnology solutions for longevity."
+        />
+        <meta
+          name="keywords"
+          content="Contact Zetakree, biotech collaboration, longevity solutions, AI health technology, info@zetakree.com, Japheth Jonathan"
+        />
+        <meta name="author" content="Japheth Jonathan" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {/* <title>Contact Us - Zetakree Biotech</title> */}
       </Helmet>
 
-    <div className="bg-[#262626] h-full  relative">
-      <div className="bg-black">
-        <div
-          className="about-transition_main-img bg-cover bg-center h-full"
-          style={{
-            backgroundImage:
-              "url('https://cdn.prod.website-files.com/6597cc7be68d63ec0c8ce338/65b7eb0c290e7bf3aaab98f0_tranisiton-bg.webp')",
-          }}
-        >
-          <div className="flex justify-center">
-            <div className="max-w-[2000px] lg:px-14 px-3 w-full">
-              <div className="flex justify-center">
-                <Navbar />
-              </div>
-              <div className="flex justify-center mt-[200px] mb-[200px]">
-                <h3 className="text-white text-center text-[40px] md:text-[60px] font-[500] max-w-[700px]">
-                  We are closer to you than you think, Get in Touch
-                </h3>
+      <div className="bg-[#262626] h-full  relative">
+        <div className="bg-black">
+          <div
+            className="about-transition_main-img bg-cover bg-center h-full"
+            style={{
+              backgroundImage:
+                "url('https://cdn.prod.website-files.com/6597cc7be68d63ec0c8ce338/65b7eb0c290e7bf3aaab98f0_tranisiton-bg.webp')",
+            }}
+          >
+            <div className="flex justify-center">
+              <div className="max-w-[2000px] lg:px-14 px-3 w-full">
+                <div className="flex justify-center">
+                  <Navbar />
+                </div>
+                <div className="flex justify-center mt-[200px] mb-[200px]">
+                  <h3 className="text-white text-center text-[40px] md:text-[60px] font-[500] max-w-[700px]">
+                    We are closer to you than you think, Get in Touch
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="my-20">
-        <div id="get-in-touch" className="flex justify-center ">
-          <h3 className="text-[#f5f5f5] text-center leading-[45px] lg:leading-[60px]  z-10 text-[40px] lg:text-[4rem] ">
-            Reach out to us
-          </h3>
-        </div>
-        {/* <div className="flex justify-center">
+        <div className="my-20">
+          <div id="get-in-touch" className="flex justify-center ">
+            <h3 className="text-[#f5f5f5] text-center leading-[45px] lg:leading-[60px]  z-10 text-[40px] lg:text-[4rem] ">
+              Reach out to us
+            </h3>
+          </div>
+          {/* <div className="flex justify-center">
           <h3 className="text-[#737373] max-w-[600px] z-10 text-center text-[19px] md:text-[25px] ">
             Have questions or want to collaborate? Let’s build a healthier,
             longer future together.
           </h3>
         </div> */}
 
-        {/* <div className="flex mt-5 mb-10 justify-center">
+          {/* <div className="flex mt-5 mb-10 justify-center">
           <div className="lg:flex z-10 gap-4">
             <div className="flex z-10 gap-2 justify-center py-2 text-white bg-[#262626] items-center text-[16px] px-3  rounded-[12px]">
               Book Consultation
@@ -148,147 +161,142 @@ const Contact = () => {
             </div>
           </div>
         </div> */}
-      </div>
-      {/* <div className="grid lg:grid-cols-2 gap-4 lg:gap-10 items-center"> */}
-      <div className="flex justify-center">
-      <div className="max-w-[2000px] lg:px-14 px-3 w-full">
-          <form onSubmit={handleSubmit}>
-            <div className="grid md:grid-cols-2 gap-4">
-            <div className="relative w-full mb-6 mt-4">
-              <label
-                htmlFor="first_name"
-                className="block mb-2 text-[24px] font-semibold text-white"
-              >
-                First Name
-              </label>
-              <input
-                type="text"
-                className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
-                placeholder="Enter First Name"
-                name="first_name"
-                value={formData.first_name}
-                onChange={handleChange}
-                // onChange={handleChange}
-                // onInput={handleInput}
-                required
-              />
-            </div>
-            <div className="relative w-full mb-6 mt-4">
-              <label
-                htmlFor="last_name"
-                className="block mb-2 text-[24px] font-semibold text-white"
-              >
-                Last Name
-              </label>
-              <input
-                type="text"
-                className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
-                placeholder="Enter Last Name"
-                name="last_name"
-                value={formData.last_name}
-                onChange={handleChange}
-                // onChange={handleChange}
-                // onInput={handleInput}
-                required
-              />
-            </div>
-
-         
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-4">
-            <div className="relative w-full mb-6">
-              <label
-                htmlFor="email"
-                className="block mb-2 text-[24px] font-semibold text-white"
-              >
-                Email Address
-              </label>
-              <input
-                type="email"
-                className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
-                placeholder="Enter email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                // onChange={handleChange}
-                // value={userData.email}
-              />
-              {/* {emailError && <div className="text-red-500 text-sm mt-1">{emailError}</div>} */}
-            </div>
-            <div className="relative w-full mb-6 ">
-              <label
-                htmlFor="phone"
-                className="block mb-2 text-[24px] font-semibold text-white"
-              >
-                Phone Number
-              </label>
-              <input
-                type="number"
-                className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
-                placeholder="Enter Phone Number"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                // onChange={handleChange}
-                // onInput={handleInput}
-                required
-              />
-            </div>
-
-           
-            </div>
-
-            <div className="mb-6 ">
-              <label
-                htmlFor="message"
-                className="block mb-2 text-[24px] font-semibold text-white"
-              >
-                Reason for your message
-              </label>
-              <textarea
-                id="message"
-                rows={4}
-                required
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                // onChange={() => handleChange}
-                className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
-                placeholder="Enter your message here..."
-              ></textarea>
-            </div>
-            <div className="lg:pl-4 mb-7">
-              <button
-                type="submit"
-                className="py-4 px-9  text-lg font-medium  bg-[#23F7DD] rounded-lg "
-              >
-               Submit
-              </button>
-            </div>
-          </form>
-</div>
-<ToastContainer
-          position="top-center"
-          autoClose={2000}
-          hideProgressBar={true}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        />
         </div>
-          <div id="our-locations">
+        {/* <div className="grid lg:grid-cols-2 gap-4 lg:gap-10 items-center"> */}
+        <div className="flex justify-center">
+          <div className="max-w-[2000px] lg:px-14 px-3 w-full">
+            <form onSubmit={handleSubmit}>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="relative w-full mb-6 mt-4">
+                  <label
+                    htmlFor="first_name"
+                    className="block mb-2 text-[24px] font-semibold text-white"
+                  >
+                    First Name
+                  </label>
+                  <input
+                    type="text"
+                    className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
+                    placeholder="Enter First Name"
+                    name="first_name"
+                    value={formData.first_name}
+                    onChange={handleChange}
+                    // onChange={handleChange}
+                    // onInput={handleInput}
+                    required
+                  />
+                </div>
+                <div className="relative w-full mb-6 mt-4">
+                  <label
+                    htmlFor="last_name"
+                    className="block mb-2 text-[24px] font-semibold text-white"
+                  >
+                    Last Name
+                  </label>
+                  <input
+                    type="text"
+                    className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
+                    placeholder="Enter Last Name"
+                    name="last_name"
+                    value={formData.last_name}
+                    onChange={handleChange}
+                    // onChange={handleChange}
+                    // onInput={handleInput}
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="relative w-full mb-6">
+                  <label
+                    htmlFor="email"
+                    className="block mb-2 text-[24px] font-semibold text-white"
+                  >
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
+                    placeholder="Enter email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    // onChange={handleChange}
+                    // value={userData.email}
+                  />
+                  {/* {emailError && <div className="text-red-500 text-sm mt-1">{emailError}</div>} */}
+                </div>
+                <div className="relative w-full mb-6 ">
+                  <label
+                    htmlFor="phone"
+                    className="block mb-2 text-[24px] font-semibold text-white"
+                  >
+                    Phone Number
+                  </label>
+                  <input
+                    type="number"
+                    className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
+                    placeholder="Enter Phone Number"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    // onChange={handleChange}
+                    // onInput={handleInput}
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="mb-6 ">
+                <label
+                  htmlFor="message"
+                  className="block mb-2 text-[24px] font-semibold text-white"
+                >
+                  Reason for your message
+                </label>
+                <textarea
+                  id="message"
+                  rows={4}
+                  required
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  // onChange={() => handleChange}
+                  className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
+                  placeholder="Enter your message here..."
+                ></textarea>
+              </div>
+              <div className="lg:pl-4 mb-7">
+                <button
+                  type="submit"
+                  className="py-4 px-9  text-lg font-medium  bg-[#23F7DD] rounded-lg "
+                >
+                  {loader ? <LoadingSpinner /> : "Submit"}
+                </button>
+              </div>
+            </form>
+          </div>
+          <ToastContainer
+            position="top-center"
+            autoClose={2000}
+            hideProgressBar={true}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
+        </div>
+        <div id="our-locations">
           <ContactMap />
         </div>
         {/* </div> */}
-   
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
     </>
   );
 };

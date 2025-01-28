@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from '../component/Footer'
 import Navbar from '../component/Navbar'
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const AppFeatures = () => {
 
   // const features = [
@@ -322,6 +323,55 @@ const AppFeatures = () => {
   //     ]
   //   },
   // ];
+  const [formData, setFormData] = useState({
+
+    email: '',
+  });
+
+  // Handle input changes
+  const handleChange = (e:any) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e:any) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('https://zeta-nvjw.onrender.com/api/submissions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+      toast.success('Form submitted successfully!');
+
+        // alert('Form submitted successfully!');
+        setFormData({
+          // last_name: '',
+          email: '',
+          // phone: '',
+          // message: '',
+        });
+      } else {
+      toast.error('Failed to submit form');
+
+        // alert('Failed to submit form');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast.error('An error occurred while submitting the form');
+
+      // alert('An error occurred while submitting the form');
+    }
+  };
 
   const features = [
     {
@@ -506,11 +556,16 @@ const AppFeatures = () => {
             <div className="absolute top-4 left-4 right-4 text-white">
               <h2 className="text-2xl font-bold mb-2">{feature.category}</h2>
               <p className="text-sm mb-4">{feature.description}</p>
-              <ul className="text-sm list-disc list-inside space-y-1">
-                {feature.items.slice(0, 4).map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
-              </ul>
+              <div className="text-sm space-y-2">
+        {feature.items.slice(0, 4).map((item, idx) => (
+          <div key={idx} className="flex items-center gap-2">
+          <span className="flex items-center justify-center w-6 h-6 bg-gradient-to-br from-green-400 to-green-600 rounded-full shadow-md text-white font-bold text-sm">
+              {idx + 1}
+            </span>
+             <span>{item}</span>
+          </div>
+        ))}
+      </div>
               {/* <button className="mt-4 bg-green-500 px-4 py-2 text-sm font-semibold rounded hover:bg-green-400">
                 Learn More
               </button> */}
@@ -520,6 +575,99 @@ const AppFeatures = () => {
       </main>
     </div>
   
+        <div className="mb-20">
+          <div id="get-in-touch" className="flex justify-center ">
+            <h3 className="text-[#f5f5f5] text-center leading-[45px] lg:leading-[60px]  z-10 text-[40px] lg:text-[4rem] ">
+              Join Our Waitlist
+            </h3>
+          </div>
+          {/* <div className="flex justify-center">
+            <h3 className="text-[#737373] max-w-[600px] z-10 text-center text-[19px] md:text-[25px] ">
+              Have questions or want to collaborate? Let’s build a healthier,
+              longer future together.
+            </h3>
+          </div> */}
+  
+          {/* <div className="flex mt-5 mb-10 justify-center">
+            <div className="lg:flex z-10 gap-4">
+              <div className="flex z-10 gap-2 justify-center py-2 text-white bg-[#262626] items-center text-[16px] px-3  rounded-[12px]">
+                Book Consultation
+                <svg
+                  width="31"
+                  height="30"
+                  viewBox="0 0 31 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 25.3594L11 22.7812V4.6875L20 7.26562V25.3594ZM21.5 25.2656V7.17188L27.4531 4.78125C28.1562 4.5 29 5.01562 29 5.8125V21.5156C29 21.9844 28.7188 22.4062 28.25 22.5469L21.5 25.2656ZM2.70312 7.5L9.5 4.78125V22.875L3.5 25.2656C2.79688 25.5469 2 25.0312 2 24.2344V8.53125C2 8.0625 2.28125 7.64062 2.70312 7.5Z"
+                    fill="#F5F5F5"
+                  ></path>
+                </svg>
+              </div>
+  
+              <div className="flex z-10 mt-3 lg:mt-0 gap-2 py-2 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]">
+                Contact Us
+              </div>
+            </div>
+          </div> */}
+        </div>
+        {/* <div className="grid lg:grid-cols-2 gap-4 lg:gap-10 items-center"> */}
+        <div className="flex justify-center">
+        <div className="max-w-[2000px] lg:px-14 px-3 w-full">
+            <form onSubmit={handleSubmit}>
+              <div className="grid md:grid-cols-2 gap-4">
+         
+           
+              </div>
+  
+              <div className="grid md:grid-cols-2 gap-4">
+              <div className="relative w-full mb-6">
+                <label
+                  htmlFor="email"
+                  className="block mb-2 text-[24px] font-semibold text-white"
+                >
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  className="border bg-transparent border-[#737373] text-white text-[18px] rounded-[10px] block w-full p-3 placeholder-[#737373]  ease-linear transition-all duration-150"
+                  placeholder="Enter email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  // onChange={handleChange}
+                  // value={userData.email}
+                />
+                {/* {emailError && <div className="text-red-500 text-sm mt-1">{emailError}</div>} */}
+              </div>
+             
+              </div>
+  
+        
+              <div className="lg:pl-4 mb-7">
+                <button
+                  type="submit"
+                  className="py-4 px-9  text-lg font-medium  bg-[#23F7DD] rounded-lg "
+                >
+                 Submit
+                </button>
+              </div>
+            </form>
+  </div>
+  <ToastContainer
+            position="top-center"
+            autoClose={2000}
+            hideProgressBar={true}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
+          </div>
       <Footer />
     </div>
     </div>

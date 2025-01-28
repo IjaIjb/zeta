@@ -215,7 +215,7 @@ const Navbar = () => {
               Marketplace
             </h5>
           </Link>
-          {/* <Link
+          <Link
             to={"/app-features"}
             className="relative"
             // onMouseOut={() => setToggleColl((prev) => !prev)}
@@ -224,7 +224,7 @@ const Navbar = () => {
             <h5 className="text-[#A3A3A3] cursor-pointer text-[16px]">
              App Features
             </h5>
-          </Link> */}
+          </Link>
           <Link
             to={"/contact-us"}
             className="relative"
@@ -565,7 +565,7 @@ const Navbar = () => {
                 </h5>
               </Link>
 
-              {/* <Link
+              <Link
               to={"/app-features"}
                 className="relative"
                 // onMouseOut={() => setToggleColl((prev) => !prev)}
@@ -574,7 +574,7 @@ const Navbar = () => {
                 <h5 className="text-[#A3A3A3] mt-4 cursor-pointer text-[20px]">
                  App Features
                 </h5>
-              </Link> */}
+              </Link>
 
               <div className="relative">
                 <div className="flex gap-3">

@@ -1,11 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import LoadingSpinner from "./UI/LoadingSpinner";
 
 const Footer = () => {
+  const [loader, setLoader] = useState(false);
+  const [formData, setFormData] = useState({
+    email: "",
+  });
+
+  // Handle input changes
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    setLoader(true);
+
+    try {
+      const response = await fetch(
+        "https://zeta-nvjw.onrender.com/api/submissions",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.ok) {
+        toast.success("Form submitted successfully!");
+
+        // alert('Form submitted successfully!');
+        setFormData({
+          // last_name: '',
+          email: "",
+          // phone: '',
+          // message: '',
+        });
+        setLoader(false);
+      } else {
+        toast.error("Failed to submit form");
+        setLoader(false);
+        // alert('Failed to submit form');
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast.error("An error occurred while submitting the form");
+      setLoader(false);
+      // alert('An error occurred while submitting the form');
+    }
+  };
   return (
     <div className="mt-10">
       <div className="bg-[#080808] relative overflow-hidden">
-        {/* <div className="relative">
+        <div className="relative">
           <img
             src="https://cdn.multiversx.com/webflow/Home-Hero-Bg-02.webp"
             alt=""
@@ -25,34 +82,41 @@ const Footer = () => {
             className="w-[550px] h-[550px]"
           />
         </div>
-        <div className="flex justify-center relative z-[1]">
-          <div className="max-w-[2000px] h-full md:px-14 px-4 pt-[100px] md:pb-[150px] pb-14 w-full">
-            <div className="flex justify-center pb-5">
-              <div className="text-[1.5rem] text-center font-[500] text-white">
-                Stay in-the-know and never miss an update
+        <form onSubmit={handleSubmit}>
+          <div className="flex justify-center relative z-[1]">
+            <div className="max-w-[2000px] h-full md:px-14 px-4 pt-[100px] md:pb-[150px] pb-14 w-full">
+              <div className="flex justify-center pb-5">
+                <div className="text-[2.5rem] text-center font-[500] text-white">
+                  Join Our Waitlist
+                </div>
               </div>
-            </div>
-            <div className="md:flex justify-center gap-2 items-center">
-              <input
-                type="email"
-                className="h-12 rounded-[12px] px-5 md:w-[350px] w-full text-[#f5f5f5] text-[1.13rem] bg-[#262626] border border-[#262626]"
-                placeholder="Enter a valid email address"
-              />
-              <div className="h-12 mt-5 md:mt-0 text-[#080808] rounded-[12px] flex justify-center text-center items-center bg-[#00D3BA] px-7">
-                Sign up
+              <div className="md:flex justify-center gap-2 items-center">
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="h-12 rounded-[12px] px-5 md:w-[350px] w-full text-[#f5f5f5] text-[1.13rem] bg-[#262626] border border-[#262626]"
+                  placeholder="Enter a valid email address"
+                />
+                <button
+                  type="submit"
+                  className="h-12 mt-5 md:mt-0 text-[#080808] rounded-[12px] flex justify-center text-center items-center bg-[#00D3BA] px-7"
+                >
+                  {loader ? <LoadingSpinner /> : "Submit"}
+                </button>
               </div>
-            </div>
-            <div className="flex justify-center pt-5">
-              <h5 className="text-[#737373] text-[13px] text-center max-w-[380px]">
-                We're committed to your privacy. MultiversX uses the information
-                you provide to us to contact you about MultiversX content and
-                events. You may unsubscribe from these communications at any
-                time. For more information, check out our Privacy Policy.
-              </h5>
+              <div className="flex justify-center pt-5">
+                <h5 className="text-[#737373] text-[13px] text-center max-w-[380px]">
+                  Be among the first to experience cutting-edge biotech
+                  innovations. Join our waitlist to get early access to
+                  exclusive features and updates!
+                </h5>
+              </div>
             </div>
           </div>
-        </div> */}
-
+        </form>
         <div className="flex justify-center relative z-[1]">
           <div className="max-w-[2000px] h-full md:px-14 px-4 pt-[100px] pb-[150px] w-full">
             <div className="grid grid-cols-2">
@@ -158,10 +222,10 @@ const Footer = () => {
                 <div className="flex text-[#737373]  ">
                   21 cape road, maitama Abuja Nigeria,
                 </div>
-                <div className="flex text-[#737373]  ">
+                {/* <div className="flex text-[#737373]  ">
                   3401 N. Miami, Ave. Ste 230
-                </div>
-                <div className="flex gap-4 mt-4">
+                </div> */}
+                <div className="flex items-center gap-4 mt-4">
                   <a href="https://x.com/zetakree" target="_blank">
                     <svg
                       width="100%"
@@ -176,7 +240,26 @@ const Footer = () => {
                       ></path>
                     </svg>
                   </a>
-                  <div>
+                  <div className="block">
+                    <a
+                      href="https://www.tiktok.com/@zekakree?_t=ZM-8tKToMkzUow&_r=1"
+                      target="_blank"
+                    >
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15 0C15.5523 0 16 0.447715 16 1V4.58984C17.9453 5.74479 19.9189 5.90234 21.75 5.90234C21.7803 5.90234 21.8107 5.90244 21.841 5.90244C22.3534 5.90244 22.78 6.32906 22.78 6.84147V10.5254C22.78 11.0379 22.3534 11.4645 21.841 11.4645C19.9633 11.4645 18.0229 10.9202 16.3887 9.86816V18.75C16.3887 23.0645 13.0645 26.3887 8.75 26.3887C4.43556 26.3887 1.11133 23.0645 1.11133 18.75C1.11133 14.4361 4.43556 11.1113 8.75 11.1113C9.03223 11.1113 9.3125 11.1343 9.58984 11.1797V14.1162C9.3125 14.072 9.03223 14.05 8.75 14.05C6.2207 14.05 4.16602 16.1047 4.16602 18.6348C4.16602 21.165 6.2207 23.2197 8.75 23.2197C11.2793 23.2197 13.334 21.165 13.334 18.6348V6.84147C13.334 6.32906 13.7606 5.90244 14.273 5.90244C14.5859 5.90244 14.8701 5.74249 15.041 5.46875V1C15.041 0.447715 15.4477 0 16 0H15Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  {/* <div>
                     <svg
                       width="100%"
                       height="100%"
@@ -189,7 +272,7 @@ const Footer = () => {
                         fill="currentColor"
                       ></path>
                     </svg>
-                  </div>
+                  </div> */}
                   {/* <div>
                     <svg
                       width="100%"
@@ -220,20 +303,43 @@ const Footer = () => {
                     </svg>
                   </a>
 
-                  <div className=" block">
-                  <a href="https://www.linkedin.com/company/zetakree" target="_blank">
-                    <svg
-                      width="100%"
-                      height="100%"
-                      viewBox="0 0 30 30"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
+                  <div className="block">
+                    <a
+                      href="https://www.instagram.com/zetakree_?igsh=MTg0ZmtjZnRtb2JsdA%3D%3D&utm_source=qr"
+                      target="_blank"
                     >
-                      <path
-                        d="M24 4.5C24.7969 4.5 25.5 5.20312 25.5 6.04688V24C25.5 24.8438 24.7969 25.5 24 25.5H5.95312C5.15625 25.5 4.5 24.8438 4.5 24V6.04688C4.5 5.20312 5.15625 4.5 5.95312 4.5H24ZM10.8281 22.5V12.5156H7.73438V22.5H10.8281ZM9.28125 11.1094C10.2656 11.1094 11.0625 10.3125 11.0625 9.32812C11.0625 8.34375 10.2656 7.5 9.28125 7.5C8.25 7.5 7.45312 8.34375 7.45312 9.32812C7.45312 10.3125 8.25 11.1094 9.28125 11.1094ZM22.5 22.5V17.0156C22.5 14.3438 21.8906 12.2344 18.75 12.2344C17.25 12.2344 16.2188 13.0781 15.7969 13.875H15.75V12.5156H12.7969V22.5H15.8906V17.5781C15.8906 16.2656 16.125 15 17.7656 15C19.3594 15 19.3594 16.5 19.3594 17.625V22.5H22.5Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15 6C10.58 6 6.979 6.446 6.003 6.85C5.08 7.224 4.37 7.933 3.996 8.855C3.592 9.831 3.146 13.4 3.146 17.826C3.146 22.253 3.592 25.821 3.996 26.797C4.37 27.719 5.08 28.429 6.003 28.803C6.979 29.207 10.58 29.653 15 29.653C19.42 29.653 23.021 29.207 23.997 28.803C24.92 28.429 25.63 27.719 26.004 26.797C26.408 25.821 26.854 22.253 26.854 17.826C26.854 13.4 26.408 9.831 26.004 8.855C25.63 7.933 24.92 7.224 23.997 6.85C23.021 6.446 19.42 6 15 6ZM15 26C11.673 26 8.354 25.853 7.602 25.482C6.947 25.162 6.395 24.61 6.075 23.954C5.604 22.853 5.481 20.571 5.481 17.826C5.481 15.081 5.604 12.799 6.075 11.698C6.395 11.042 6.947 10.49 7.602 10.17C8.354 9.799 11.673 9.653 15 9.653C18.327 9.653 21.646 9.799 22.398 10.17C23.053 10.49 23.605 11.042 23.925 11.698C24.396 12.799 24.519 15.081 24.519 17.826C24.519 20.571 24.396 22.853 23.925 23.954C23.605 24.61 23.053 25.162 22.398 25.482C21.646 25.853 18.327 26 15 26ZM15 11.146C12.243 11.146 10.018 13.371 10.018 16.128C10.018 18.885 12.243 21.11 15 21.11C17.757 21.11 19.982 18.885 19.982 16.128C19.982 13.371 17.757 11.146 15 11.146ZM15 18.855C13.466 18.855 12.271 17.66 12.271 16.126C12.271 14.592 13.466 13.397 15 13.397C16.534 13.397 17.729 14.592 17.729 16.126C17.729 17.66 16.534 18.855 15 18.855ZM21.207 10.094C20.649 10.094 20.193 9.638 20.193 9.08C20.193 8.522 20.649 8.066 21.207 8.066C21.765 8.066 22.221 8.522 22.221 9.08C22.221 9.638 21.765 10.094 21.207 10.094Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div className=" block">
+                    <a
+                      href="https://www.linkedin.com/company/zetakree"
+                      target="_blank"
+                    >
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24 4.5C24.7969 4.5 25.5 5.20312 25.5 6.04688V24C25.5 24.8438 24.7969 25.5 24 25.5H5.95312C5.15625 25.5 4.5 24.8438 4.5 24V6.04688C4.5 5.20312 5.15625 4.5 5.95312 4.5H24ZM10.8281 22.5V12.5156H7.73438V22.5H10.8281ZM9.28125 11.1094C10.2656 11.1094 11.0625 10.3125 11.0625 9.32812C11.0625 8.34375 10.2656 7.5 9.28125 7.5C8.25 7.5 7.45312 8.34375 7.45312 9.32812C7.45312 10.3125 8.25 11.1094 9.28125 11.1094ZM22.5 22.5V17.0156C22.5 14.3438 21.8906 12.2344 18.75 12.2344C17.25 12.2344 16.2188 13.0781 15.7969 13.875H15.75V12.5156H12.7969V22.5H15.8906V17.5781C15.8906 16.2656 16.125 15 17.7656 15C19.3594 15 19.3594 16.5 19.3594 17.625V22.5H22.5Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
                     </a>
                   </div>
                 </div>
